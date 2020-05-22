@@ -1,0 +1,325 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UX Copy Blog | UX Writing Essentials: Error Messages</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="normalize.css">
+  <script src="https://kit.fontawesome.com/71d53be390.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="header_copy">
+            <a href="file:///Users/philipmueller/Desktop/blog/index.html" class="logo">
+                <div class="logo_box">
+                    <div class="logo_left">UX</div> 
+                </div>
+                <div class="logo_right">COPY BLOG</div>
+            </a>
+
+            <div id="headline" class="header_headline hide">
+                UX Writing Essentials: Error Messages
+            </div> 
+        </div>  
+        <div class="progress"></div>
+    </header>   
+        
+<!-- Article | Heading -->
+
+<article>
+    <div class="article_content">
+
+        <h1 class="article_headline">UX Writing Essentials: Error Messages</h1>
+
+        <h2>
+            <span class="bold_black">Key points –</span> When writing error messages, make sure users understand what has happened and what they can do to fix the problem. 
+            Don’t just think of your error messages as an acknowledgement of a problem, but rather as a blueprint for a solution.</h2>
+
+        <!-- Sharing & time -->
+
+        <aside class="time-share">
+
+            <div class="time-share-left">
+                <div class="pushlish-date">15 May 2020 ·&nbsp;</div>
+                <div class="read-time"></div>
+            </div>     
+
+            <div class="time-share-right">
+                <button class="sharing-button">
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://philipmueller.co.uk/montblanc-meisterstueck.html" target="_blank" class="linkedin-share"><i class="fab fa-linkedin-in"></i></a>
+                </button>
+                
+                <button class="sharing-button">
+                    <a href="https://twitter.com/share?text=How to Start Freelancing in London (As a Foreigner):&url=https://philipmueller.co.uk/index.html&hashtags=UXwriting,UX,copywriting" target="_blank" class="twitter-share"><i class="fab fa-twitter"></i></a>
+                </button>
+
+                <button class="sharing-button">
+                    <a href="mailto: ?subject=How%20to%20Start%20Freelancing%20in%20London%20(As%20a%20Foreigner)&body=https%3A%2F%2Fphilipmueller.co.uk%2Frga.html" target="_blank" class="email-share"><i class="far fa-envelope"></i></a>
+                </button>
+
+                <input type="text" value="https://philipmueller.co.uk/siemens.html" id="myInput" readonly>
+                
+                <button class="sharing-button" onclick="copyText()">
+                    <i class="fas fa-link"></i>
+                </button>
+                <div id="snackbar">Link copied!</div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Article | Content -->
+
+    <img src="/Users/philipmueller/Desktop/blog/_assets/essentials_errors/errors_header.svg" class="header_image" alt="Image of an error message">
+
+    <div class="article_content">
+
+        <h3>
+            What is an error message?
+        </h3>
+
+        <p>
+            Error messages tell the user that something has gone wrong in the past. 
+            Some kind of problem has occurred and the user has to take action in order to successfully complete a task. 
+            This makes error messages different from other, similar messages, such as warnings or confirmation dialogues – those relate to something that might occur in the future. 
+        </p>
+
+        <p>
+            Error messages are the roadblocks in any digital experience. The little bumps along the road. 
+            While nobody likes to see them, they are necessary to highlight an issue and, most importantly,  can help users fix it. 
+        </p>
+
+        <p class="copy_with_list">
+            So don’t think of your error messages as, “Oh my god, something went wrong!”, but rather: “Something went wrong. Here’s how you can fix it.” 
+            To do that, your error message should answer these 3 questions:
+            <ol>
+                <li>
+                    What went wrong? 
+                </li>
+                <li>
+                    Why did it go wrong?
+                </li>
+                <li>
+                    How can the user solve this?
+                </li>
+            </ol>
+        </p>
+
+        <p>
+           <i>(If you don’t have a lot of space, for example when you’re writing inline error messages, focus on 1. and 2. – those are the most important ones. 
+            The key is to let users know what went wrong and to help them find a solution.)</i>  
+        </p>
+
+        <h3>
+            Structure of an error message
+        </h3>
+        
+        <p>
+            Usually, the structure of an error message consists of a heading, some body copy and one or two CTAs. 
+            Ideally, your error messages work even if the user doesn’t read the body copy (which is often the case). 
+            Let your heading and primary CTA do the heavy lifting. 
+        </p>
+
+        <div class="article_picture_wrapper">
+            <img alt="Structure of an error message" class="article_image" src="/Users/philipmueller/Desktop/blog/_assets/essentials_errors/errors_low.png" data-src="/Users/philipmueller/Desktop/blog/_assets/essentials_errors/errors_1.svg">
+        </div>
+
+        <p>
+            <span class="bold_black">Heading</span><br>
+            Give a concise summary of the problem. 
+            Avoid any ambiguity (e.g., “Something went wrong”) and don’t be apologetic (e.g., “We’re sorry, but…”). 
+            Summarise the problem you’re describing in the body copy.
+        </p>
+
+        <p class="copy_with_list">
+            <span class="bold_black">Body copy</span><br>
+            Your body copy should do 2 things:
+            <ol>
+                <li>
+                    Explain the problem. Again, keep it short.
+                </li>
+                <li>
+                    Offer an actionable solution. Make sure that the user is never stuck in a “dead end”.
+                </li>
+            </ol>
+        </p>
+
+        <p>
+            <span class="bold_black">CTA (Call to action)</span><br>
+            Make sure that the CTA properly describes the action it triggers. 
+            Often, a CTA just makes sure that a user has acknowledged the problem. In those cases, "OK" or "Close" can be sufficient.
+            Sometimes, your CTA needs to trigger a specific action, for example "Re-enter password". <a href="file:///Users/philipmueller/Desktop/blog/essentials_ctas.html" target="_blank" class="text-link">Read more about CTAs here</a>
+        </p>
+
+        <h3>
+            Tone and voice
+        </h3>
+
+        <p>
+            When trying to find the right tone for your error message, imagine the user’s mindset. 
+            It’s usually not going to be pleasant, and the emotions might range from mild annoyance to anxiety or full-on anger. 
+            In any case, nowhere in the “happy” spectrum. 
+        </p>
+
+        <p>
+            What you want to offer in a situation like this is a clear, simple way out. 
+            No long-winded apologies, quirky comments or hard to understand, technical descriptions. 
+        </p>
+
+        <p class="copy_with_list">
+            Your error messages should be:
+            <ul>
+                <li>
+                    Straightforward
+                </li>
+                <li>
+                    Reassuring 
+                </li>
+                <li>
+                    Solution-oriented
+                </li>
+            </ul>
+        </p>
+
+        <h3>
+            Different types of error messages
+        </h3>
+
+        <p>
+            Most error messages follow the pattern we discussed above. 
+            There are a couple error messages that work differently. 
+            But whatever kind of error message you’re writing, make sure that the user knows what happened, and what they can do to solve the issue. 
+            Here are a couple of examples.
+        </p>
+
+        <p>
+            <span class="bold_black">Inline error messages</span><br>
+            These appear while the user is entering information, usually on form fields. 
+            Don’t blame the user (“You entered a wrong password!”). 
+            Instead, make it positive, actionable message: 
+        </p>
+
+        <div class="article_picture_wrapper">
+            <img alt="Two inline error messages" class="article_image" src="/Users/philipmueller/Desktop/blog/_assets/essentials_errors/errors_low.png" data-src="/Users/philipmueller/Desktop/blog/_assets/essentials_errors/errors_2.svg">
+        </div>
+
+        <p>
+            <span class="bold_black">Toast messages</span><br>
+            Some errors require the user to take action outside of your app or website. 
+            For example, when there’s no internet connection. 
+            In such a case, it’s fine to just show a toast message that simply states the problem – most users will know what to do with this kind of information.
+        </p>
+
+        <div class="article_picture_wrapper">
+            <img alt="A toast message in an iPhone wireframe" class="article_image" src="/Users/philipmueller/Desktop/blog/_assets/essentials_errors/errors_low.png" data-src="/Users/philipmueller/Desktop/blog/_assets/essentials_errors/errors_3.svg">
+        </div>
+
+        <p>
+            <span class="bold_black">404 pages</span><br>
+            A 404 page indicates that the browser is able to communicate with the server, but it can’t find the exact link a user is looking for. 
+            And while not an error message in the usual sense, they work in the same way.
+            This is usually not the most high-stakes kind of error, so you can use it as an opportunity to let your project’s character shine through. 
+            Just make sure to spell out the 404 error code and add a link that takes users back to the home page.
+        </p>
+
+        <div class="article_picture_wrapper">
+            <img alt="Pixar's 404 page" class="article_image" src="/Users/philipmueller/Desktop/blog/_assets/essentials_errors/errors_low.png" data-src="/Users/philipmueller/Desktop/blog/_assets/essentials_errors/errors_4.svg">
+            <span class="image_description"><a href="https://www.pixar.com/404" target="_blank" class="desc-link">Pixar's 404 page</a></span>
+        </div>
+
+        <h3>
+            One error message per problem
+        </h3>
+
+        <p>
+            I’ve found that quite often, developers will want to cover multiple error scenarios with a single, “generic” error message. 
+            While this can save some work, it doesn’t make sense from a user’s perspective. 
+            Generic messages are vague by definition and offer little opportunity to actually solve a problem. 
+            Generally, go for one error message per error scenario. 
+        </p>
+
+        <h3>
+            A final note
+        </h3>
+
+        <p>
+            And, last but not least, the best error message is the one that doesn’t even show up. 
+            If you know that there’s a problem in the UX, design, copy or code of your project, fix it first – don’t just slap an error message on it and let the user figure it out. 
+            Conversely, the worst error messages also don’t show up: whenever the user does encounter a significant problem, there should be an error message to go with it. 
+            Make sure your user always knows what’s going on.
+        </p>
+
+      
+
+    </div>
+
+</article>
+
+<!-- Related content -->
+
+<div class="related_content">
+    <div class="related_article_wrapper">
+
+        <div class="latest_article">
+            <div class="preview_image_latest_wrapper">
+                <img class="preview_image_small" src="/Users/philipmueller/Desktop/blog/_assets/home/essentials_headlines_small.svg" alt="Headlines in different situations">
+                <a href="file:///Users/philipmueller/Desktop/blog/essentials_headlines.html">
+                    <div class="preview_image_latest_overlay"></div>
+                    <i class="far fa-eye"></i>
+                </a>   
+            </div>
+            
+            <p class="date_line">14 May 2020</p>
+            <a href="file:///Users/philipmueller/Desktop/blog/essentials_headlines.html" class="headline_link">
+               <h3 class="featured_article_headline">UX Writing Essentials: Headlines</h3>
+           </a>
+           <a href="file:///Users/philipmueller/Desktop/blog/essentials_headlines.html" class="read_now_link">Read now
+               <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+           </a>
+        </div>
+
+        <div class="latest_article">
+            <div class="preview_image_latest_wrapper">
+                <img class="preview_image_small" src="/Users/philipmueller/Desktop/blog/_assets/home/essentials_ctas_small.svg" alt="A call-to-action button">
+                <a href="file:///Users/philipmueller/Desktop/blog/essentials_ctas.html">
+                    <div class="preview_image_latest_overlay"></div>
+                    <i class="far fa-eye"></i>
+                </a>   
+            </div>
+
+            <p class="date_line">12 May 2020</p>
+            <a href="file:///Users/philipmueller/Desktop/blog/essentials_ctas.html" class="headline_link">
+                <h3 class="featured_article_headline">UX Writing Essentials: CTAs</h3>
+            </a>            
+            <a href="file:///Users/philipmueller/Desktop/blog/essentials_ctas.html" class="read_now_link">Read now
+                <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<!-- Footer -->
+
+<footer>
+    <div class="footer_copy">
+        A Quarantine Project By <br> <a href="https://philipmueller.co.uk/" target="_blank" class="footer_link">PHILIP MUELLER</a>
+    </div>
+
+    <div class="footer_follow">
+        <button class="follow-button">
+         <a href="https://www.linkedin.com/in/philipm83/" target="_blank" class="linkedin-follow"><i class="fab fa-linkedin-in linkedin-follow"></i></a>
+        </button>
+    
+        <button class="follow-button">
+          <a href="https://twitter.com/PhilipMuellerUX" target="_blank" class="twitter-follow"><i class="fab fa-twitter twitter-follow"></i></a>
+        </button>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
