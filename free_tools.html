@@ -10,10 +10,9 @@
     <meta name=”robots” content=”index,follow”>
     <link rel=”canonical” href=”https://www.uxcopyblog.com/free_tools.html”/>
     
-    <!-- CSS & Icons -->
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="normalize.css">
-    <script src="https://kit.fontawesome.com/71d53be390.js" crossorigin="anonymous"></script>
 
     <!-- Open Graph tags -->
     <meta property=”og:type” content=”article”/>
@@ -63,7 +62,7 @@
         <h1 class="article_headline">Free Tools for Web Designers</h1>
 
         <h2>
-            Something struck me as quite amazing while I worked on this project. 
+            Something struck me as quite amazing while I built this site. 
             Web development is one of the few skills that’s in high demand, and at the same time it’s accessible to anyone with a computer, an internet connection and enough free time on their hands. 
         </h2>
 
@@ -72,44 +71,73 @@
         <aside class="time-share">
 
             <div class="time-share-left">
-                <div class="pushlish-date">13 May 2020 ·&nbsp;</div>
+                <div class="pushlish-date">18 May 2020 ·&nbsp;</div>
                 <div class="read-time"></div>
             </div>     
 
             <div class="time-share-right">
-                <button class="sharing-button">
-                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.uxcopyblog.com/free_tools.html" target="_blank" class="linkedin-share"><i class="fab fa-linkedin-in"></i></a>
-                </button>
-                
-                <button class="sharing-button">
-                    <a href="https://twitter.com/share?text=Free web design tools for developers, writers and designers 👉 &url=https://www.uxcopyblog.com/free_tools.html&hashtags=UXwriting,UX,copywriting" target="_blank" class="twitter-share"><i class="fab fa-twitter"></i></a>
-                </button>
 
-                <button class="sharing-button">
-                    <a href="mailto: ?subject=UX COPY BLOG | Free Tools for Web Designers&body=https://www.uxcopyblog.com/free_tools.html" target="_blank" class="email-share"><i class="far fa-envelope"></i></a>
-                </button>
+                <div class="sharing_button_wrapper">
 
-                <input type="text" value="https://www.uxcopyblog.com/free_tools.html" id="myInput" readonly>
-                
-                <button class="sharing-button" onclick="copyText()">
-                    <i class="fas fa-link"></i>
-                </button>
-                <div id="snackbar">Link copied!</div>
+                    <button class="sharing_button_linkedin">
+                        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.uxcopyblog.com/free_tools.html" target="_blank" class="linkedin-share">
+                            <i class="icon_linkedin">
+                                <svg class="svg_linkedin" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+                            </i>
+                        </a>
+                    </button>
+                    
+                    <button class="sharing_button_twitter">
+                        <a href="https://twitter.com/share?text=Free web design tools for developers, writers and designers 👉 &url=https://www.uxcopyblog.com/free_tools.html&hashtags=UXwriting,UX,copywriting" target="_blank" class="twitter-share">
+                            <i class="icon_twitter">
+                                <svg class="svg_twitter" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                            </i>
+                        </a>
+                    </button>
+
+                    <button class="sharing_button_mail">
+                        <a href="mailto: ?subject=UX COPY BLOG | Free Tools for Web Designers&body=https://www.uxcopyblog.com/free_tools.html" target="_blank" class="email-share">
+                            <i class="icon_mail">
+                                <svg class="svg_mail" xmlns="http://www.w3.org/2000/svg" width="17px" height="17px" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/></svg>
+                            </i>
+                        </a>
+                    </button>
+
+                    <input type="text" value="https://www.uxcopyblog.com/free_tools.html" id="myInput" readonly>
+                    
+                    <button class="sharing_button_link" onclick="copyText()">
+                        <i class="icon_link">
+                            <svg class="svg_link" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 24 24"><path d="M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-1.311 1.311-3.44 1.3-4.74 0-.303-.303-.564-.68-.727-1.051l-2.246 2.245c.236.358.481.667.796.982.812.812 1.846 1.417 3.036 1.704 1.542.371 3.194.166 4.613-.617.518-.286 1.005-.648 1.444-1.087l4.304-4.305c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z"/></svg>
+                        </i>
+                    </button>
+                    <div id="snackbar">Link copied!</div>
+
+                </div>
             </div>
+
         </aside>
     </div>
 
     <!-- Article | Content -->
 
-    <img src="_assets/free_tools/free_tools_header.jpg" class="header_image" alt="Photo of a laptop and a cup of coffee">
+    <img 
+    srcset="_assets/free_tools/free_tools_header_1200.jpg 1200w, _assets/free_tools/free_tools_header_2400.jpg 2400w, _assets/free_tools/free_tools_header_4800.jpg 4800w"
+    sizes="(max-width: 800px) 1200px, (max-width: 1280px) 2400px, 4800px"
+    src="_assets/free_tools/free_tools_header_2400.jpg"
+    class="header_image_with_description"
+    alt="Photo of a laptop and a cup of coffee"
+    >
 
-    <span class="image_description">Photo by <a href="https://unsplash.com/@cgower" target="_blank" class="desc-link">Christopher Gower</a></span>
+    <span class="image_description">Photo by <a href="https://unsplash.com/@domenicoloia" target="_blank" class="desc-link">Domenico Loia</a></span>
 
     <div class="article_content">
 
         <p>
-            There are many useful and free web design tools, and here are the ones I used to design, code and write. 
-            This is by no means a complete list, but it should help you get started on your web design adventure. 
+            So here's a list of free stuff to tackle your own web design project. 
+            Tools that let you write, design and code your project. 
+            Resources for all kinds of creative assets, from photos to fonts and icons.
+            And helpful guides that help you understand the basics of code, design and copy.
+            This list is by no means complete, but it may help you get your project off the ground.
         </p>
 
         <h3>
@@ -118,21 +146,27 @@
     
         <p>
            <span class="bold_black">Figma</span> <br>
-            Basically Sketch in a browser. Makes wireframing, designing, prototyping and collaborating a breeze. 
-            It seems like it’s taking the top spot as the go-to web design tool from Sketch, so it’s probably a good idea to learn how to use it anyway. 
-            It’s free for up to 2 editors and 3 projects. <a href="https://www.figma.com/" target="_blank" class="text-link">Start designing with Figma</a>
+            Figma is quickly becoming the standard for wireframing, designing, prototyping and collaborating. 
+            It's easy to use, runs in your browser and it's free for small projects. 
+            <a href="https://www.figma.com/" target="_blank" class="text-link">Start designing with Figma</a>
         </p>
         
         <p>
             <span class="bold_black">Photopea</span> <br>
-            Free Photoshop in a browser. My requirements are rather basic, and I don’t want to pay the full Photoshop license, so Photopea is perfect for me. 
-            This doesn’t mean that Photopea only offers basic functionalities, from what I can tell, it looks pretty powerful. 
+            A free, browser-based Photoshop alternative. My requirements are rather basic, and I don’t want to pay the full Photoshop license, so Photopea is perfect for me. 
+            Which doesn’t mean that Photopea only offers basic functionalities, from what I can tell, it's pretty powerful. 
             It’s free but relies on donations. <a href="https://www.photopea.com/" target="_blank" class="text-link">Check out Photopea</a>
+        </p>
+
+        <p>
+            <span class="bold_black">Google Fonts</span> <br>
+            My go-to resource for web fonts. Google Fonts has a great library, it's easy to use, and of course, free.
+            <a href="https://fonts.google.com/" target="_blank" class="text-link">Find fonts on Google Fonts</a>
         </p>
         
         <p>
             <span class="bold_black">Coolors</span> <br>
-            Helps you create colour schemes. I learned on this project that a nice-looking, practical colour scheme can be hard to compose. 
+            Helps you create colour schemes. I learned on this project that a handsome yet practical colour scheme can be hard to compose. 
             Coolors lets you quickly skip through colour schemes. When you like a colour, “lock” it and continue your search based on your “locked” colours. 
             <a href="https://coolors.co/" target="_blank" class="text-link">Create colour schemes on Coolors</a>
         </p>
@@ -142,18 +176,25 @@
             Find existing colour schemes. If you don’t want to create your own colour scheme, just go to Color Hunt and pick one you like.
             <a href="https://colorhunt.co/" target="_blank" class="text-link">Find colour schemes on Color Hunt</a>
         </p>
+
+        <p>
+            <span class="bold_black">Unsplash</span> <br>
+            I'm not a fan of stock photography, but I'm also not a photographer. So taking my own photos is quite a hassle.
+            That's where Unsplash comes in: with free-to-use, high-quality photos from independent photographers.
+            <a href="https://unsplash.com/" target="_blank" class="text-link">Find photos on Unsplash</a>
+        </p>
         
         <p>
-            <span class="bold_black">Font Awesome icons</span> <br>
-            Easily add vector icons and social logos to your website. 
+            <span class="bold_black">Font Awesome</span> <br>
+            Easily add scalable vector icons and social logos to your website. 
             Well-designed and free, although a bunch of icons are only accessible with a paid-for “Pro” license.
             <a href="https://fontawesome.com/" target="_blank" class="text-link">Browse Font Awesome icons</a>
         </p>
         
         <p>
-            <span class="bold_black">Font size scales</span> <br>
-            Size your typography in a meaningful way. If you’re not sure which font sizes to use, then this tool can be a great help. 
-            It lets you calculate ratios based on a root font size and lets you apply different sizing ratios (I used the “golden section”, more on that below).
+            <span class="bold_black">Modularscale</span> <br>
+            If you’re not sure which font sizes to use, then this tool can be a great help. 
+            It lets you calculate font sizes based on different ratios (I used the “golden section”, more on that below).
             <a href="https://www.modularscale.com/" target="_blank" class="text-link">Size your fonts with Modularscale</a>
         </p>
         
@@ -164,6 +205,18 @@
                 It’s originally found in nature and can be expressed as a simple number: 1.618.
                 <a href="https://blog.prototypr.io/golden-ratio-what-it-is-and-why-should-you-use-it-in-design-7c3f43bcf98" target="_blank" class="text-link">Read more on the Prototypr blog</a>
             </p>
+        </div>
+
+        <div class="article_picture_full_wrapper">
+            <img 
+            alt="A laptop and a cup of coffee" 
+            class="article_image" 
+            src="_assets/free_tools/free_tools_low.png" 
+            data-src="_assets/free_tools/free_tools_1_2400.jpg"
+            data-srcset="_assets/free_tools/free_tools_1_1200.jpg 1200w, _assets/free_tools/free_tools_1_2400.jpg 2400w"
+            data-sizes="(max-width: 1024px) 1200px, 2400px"
+            >
+            <span class="image_description">Photo by <a href="https://unsplash.com/@grohsfabian" target="_blank" class="desc-link">Fabian Grohs</a></span>
         </div>
        
         <h3>
@@ -187,7 +240,7 @@
         <p>
             <span class="bold_black">CSS Flexbox</span> <br>
             Flexbox helps you create clean, responsive layouts by aligning multiple items on a single axis. 
-            Especially if you’re just starting out with CSS, Flexbox can save you hours of headache.
+            Especially if you’re just starting out with CSS (and you're still trying to figure out how to center a div), Flexbox can save you hours of headache.
             <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" class="text-link">Read more about Flexbox</a>
         </p>
         
@@ -200,7 +253,7 @@
         
         <p>
             <span class="bold_black">Lazy loading</span> <br>
-            Got a lot of images on your website? Lazy loading allows you to only load images (and other assets) only when they enter the viewport – in other words, when the user is about to see them. 
+            Got a lot of images on your website? Lazy loading allows you to load images (and other assets) only when they enter the viewport – in other words, when the user is about to see them. 
             This can significantly improve your website’s speed. 
             <a href="https://css-tricks.com/the-complete-guide-to-lazy-loading-images/" target="_blank" class="text-link">Start lazy loading now</a>
         </p>
@@ -221,7 +274,7 @@
         <p>
             <span class="bold_black">The usual suspects</span> <br>
             W3Schools and the Mozilla web docs are two of the most comprehensive web development resources. 
-            And if you can’t solve some specific coding problem, just visit Stackoverflow and find the answer (or at least some heated discussions by people who can’t figure it out either).  
+            And if you can’t solve some specific coding problem, just visit Stackoverflow and find the answer (or at least some heated discussions by people who can’t figure it out either):  
         </p>
 
         <ul>
@@ -289,10 +342,13 @@
 
         <div class="latest_article">
             <div class="preview_image_latest_wrapper">
-                <img class="preview_image_small" src="_assets/home/freelancing_london_small.jpg" alt="The Shard in London">
+                <img class="preview_image_small" src="_assets/home/freelancing_london_small.jpg" alt="People working in a café">
                 <a href="freelancing_london.html">
                     <div class="preview_image_latest_overlay"></div>
-                    <i class="far fa-eye"></i>
+                    <i class="icon_eye">
+                        <svg width="100" height="" viewBox="0 0 280 224" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#fff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" d="M33.799 83.165L11.944 57.119M82.746 52.219l-11.628-31.95M140 42V8M246.2 83.165l21.855-26.046M197.254 52.219l11.628-31.95M139.914 88C75.64 88 37.857 128.497 27 148.746 27 155.254 73.686 216 139.914 216c61.669 0 102.419-44.836 115.086-67.254C243.419 128.497 204.189 88 139.914 88z"/><mask id="a" fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z"/></mask><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z" fill="#fff"/><path d="M182.203 152c0 22.812-18.492 41.305-41.305 41.305v2c23.917 0 43.305-19.388 43.305-43.305h-2zm-41.305-41.305c22.813 0 41.305 18.493 41.305 41.305h2c0-23.917-19.388-43.305-43.305-43.305v2zM99.593 152c0-22.812 18.493-41.305 41.305-41.305v-2c-23.916 0-43.305 19.388-43.305 43.305h2zm41.305 41.305c-22.812 0-41.305-18.493-41.305-41.305h-2c0 23.917 19.389 43.305 43.305 43.305v-2zm2.255-51.068c0 7.835-6.352 14.187-14.187 14.187v2c8.94 0 16.187-7.247 16.187-16.187h-2zm-14.187-14.186c7.835 0 14.187 6.351 14.187 14.186h2c0-8.939-7.247-16.186-16.187-16.186v2zm-14.186 14.186c0-7.835 6.351-14.186 14.186-14.186v-2c-8.939 0-16.186 7.247-16.186 16.186h2zm14.186 14.187c-7.835 0-14.186-6.352-14.186-14.187h-2c0 8.94 7.247 16.187 16.186 16.187v-2z" fill="#fff" mask="url(#a)"/></svg>
+                    </i>
+                </a>   
                 </a>   
             </div>
 
@@ -301,7 +357,11 @@
                 <h3 class="featured_article_headline">Freelancing in London (As an EU Citizen)</h3>
             </a>
             <a href="freelancing_london.html" class="read_now_link">Read now
-                <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+                <span class="arrow">
+                    <i class="icon_arrow">
+                        <svg class="svg_arrow" xmlns="http://www.w3.org/2000/svg" width="0.9rem" height="0.9rem" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/></svg>
+                    </i>
+                </span>
             </a>
         </div>
 
@@ -310,7 +370,10 @@
                 <img class="preview_image_small" src="_assets/home/uk_banking_small.jpg" alt="A five-pound note">
                 <a href="uk_banking.html">
                     <div class="preview_image_latest_overlay"></div>
-                    <i class="far fa-eye"></i>
+                    <i class="icon_eye">
+                        <svg width="100" height="" viewBox="0 0 280 224" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#fff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" d="M33.799 83.165L11.944 57.119M82.746 52.219l-11.628-31.95M140 42V8M246.2 83.165l21.855-26.046M197.254 52.219l11.628-31.95M139.914 88C75.64 88 37.857 128.497 27 148.746 27 155.254 73.686 216 139.914 216c61.669 0 102.419-44.836 115.086-67.254C243.419 128.497 204.189 88 139.914 88z"/><mask id="a" fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z"/></mask><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z" fill="#fff"/><path d="M182.203 152c0 22.812-18.492 41.305-41.305 41.305v2c23.917 0 43.305-19.388 43.305-43.305h-2zm-41.305-41.305c22.813 0 41.305 18.493 41.305 41.305h2c0-23.917-19.388-43.305-43.305-43.305v2zM99.593 152c0-22.812 18.493-41.305 41.305-41.305v-2c-23.916 0-43.305 19.388-43.305 43.305h2zm41.305 41.305c-22.812 0-41.305-18.493-41.305-41.305h-2c0 23.917 19.389 43.305 43.305 43.305v-2zm2.255-51.068c0 7.835-6.352 14.187-14.187 14.187v2c8.94 0 16.187-7.247 16.187-16.187h-2zm-14.187-14.186c7.835 0 14.187 6.351 14.187 14.186h2c0-8.939-7.247-16.186-16.187-16.186v2zm-14.186 14.186c0-7.835 6.351-14.186 14.186-14.186v-2c-8.939 0-16.186 7.247-16.186 16.186h2zm14.186 14.187c-7.835 0-14.186-6.352-14.186-14.187h-2c0 8.94 7.247 16.187 16.186 16.187v-2z" fill="#fff" mask="url(#a)"/></svg>
+                    </i>
+                </a>   
                 </a>   
             </div>
              <p class="date_line">19 May 2020</p>
@@ -318,7 +381,11 @@
                 <h3 class="featured_article_headline">UK Banking for EU Freelancers</h3>
             </a>
             <a href="uk_banking.html" class="read_now_link">Read now
-                <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+                <span class="arrow">
+                    <i class="icon_arrow">
+                        <svg class="svg_arrow" xmlns="http://www.w3.org/2000/svg" width="0.9rem" height="0.9rem" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/></svg>
+                    </i>
+                </span>
             </a>
         </div>
 
@@ -329,16 +396,24 @@
 
 <footer>
     <div class="footer_copy">
-        A Quarantine Project By <br> <a href="https://philipmueller.co.uk/" target="_blank" class="footer_link">PHILIP MUELLER</a>
+        A Quarantine Project by <br> <a href="https://philipmueller.co.uk/" target="_blank" class="footer_link">PHILIP MUELLER</a>
     </div>
 
     <div class="footer_follow">
-        <button class="follow-button">
-         <a href="https://www.linkedin.com/in/philipm83/" target="_blank" class="linkedin-follow"><i class="fab fa-linkedin-in linkedin-follow"></i></a>
+        <button class="follow-button_linkedin">
+            <a href="https://www.linkedin.com/in/philipm83/" target="_blank" class="linkedin-follow">
+                <i class="linkedin-follow">
+                    <svg class="svg_linkedin-follow" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+                </i>
+            </a>
         </button>
     
-        <button class="follow-button">
-          <a href="https://twitter.com/PhilipMuellerUX" target="_blank" class="twitter-follow"><i class="fab fa-twitter twitter-follow"></i></a>
+        <button class="follow-button_twitter">
+            <a href="https://twitter.com/PhilipMuellerUX" target="_blank" class="twitter-follow">
+                <i class="twitter-follow">
+                    <svg class="svg_twitter-follow" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                </i>
+            </a>
         </button>
     </div>
 </footer>
