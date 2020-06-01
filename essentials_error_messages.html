@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head prefix="og: http://ogp.me/ns#">
+<head>
 
     <!-- General -->
     <title>UX COPY BLOG | UX Writing Essentials: Error Messages</title>
-    <meta name="description" content="Learn to write error messages that help users fix problems">
+    <meta name="description" content="Learn to write error messages that help users fix problems"/>
     <meta charset = "UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name=”robots” content=”index,follow”>
-    <link rel=”canonical” href=”https://www.uxcopyblog.com/essentials_error_messages.html”/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="robots" content="index,follow"/>
+    <link rel="canonical" href="https://www.uxcopyblog.com/essentials_error_messages.html"/>
     
     <!-- CSS -->
+    <link rel="stylesheet" href="normalize.css"/>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="normalize.css">
 
     <!-- Open Graph tags -->
-    <meta property=”og:type” content=”article”/>
-    <meta property=”og:title” content="UX COPY BLOG | UX Writing Essentials: Error Messages"/>
-    <meta property=”og:description” content="Learn to write error messages that help users fix problems"/>
-    <meta property=”og:image” content="https://www.uxcopyblog.com/_assets/essentials_errors/errors_og_image.jpg"/>
-    <meta property=”og:url” content=”https://www.uxcopyblog.com/essentials_error_messages.html”/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="UX COPY BLOG | UX Writing Essentials: Error Messages"/>
+    <meta property="og:description" content="Learn to write error messages that help users fix problems"/>
+    <meta property="og:image" content="https://www.uxcopyblog.com/_assets/essentials_errors/errors_og_image.jpg"/>
+    <meta property="og:url" content="https://www.uxcopyblog.com/essentials_error_messages.html"/>
     <meta property="og:locale" content="en_GB"/>
 
     <!-- Twitter Cards -->
-    <meta name=”twitter:title” content="UX COPY BLOG | UX Writing Essentials: Error Messages">
-    <meta name=”twitter:description” content="Learn to write error messages that help users fix problems">
-    <meta name=”twitter:image” content="https://www.uxcopyblog.com/_assets/essentials_errors/errors_twitter_image.jpg">
-    <meta name=”twitter:site” content=”@PhilipMuellerUX”>
-    <meta name=”twitter:creator” content=”@PhilipMuellerUX”>
+    <meta name="twitter:title" content="UX COPY BLOG | UX Writing Essentials: Error Messages"/>
+    <meta name="twitter:description" content="Learn to write error messages that help users fix problems"/>
+    <meta name="twitter:image" content="https://www.uxcopyblog.com/_assets/essentials_errors/errors_twitter_image.jpg"/>
+    <meta name="twitter:site" content="@PhilipMuellerUX"/>
+    <meta name="twitter:creator" content="@PhilipMuellerUX"/>
 
      <!-- Favicon -->
-    <link rel="icon" type="image/png" href="_assets/favicons/favicon_16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="_assets/favicons/favicon_32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="_assets/favicons/favicon_96.png" sizes="96x96">    
+    <link rel="icon" type="image/png" href="_assets/favicons/favicon_16.png" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="_assets/favicons/favicon_32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="_assets/favicons/favicon_96.png" sizes="96x96"/> 
+    
+    <!-- Analytics-->
+    <script async defer data-domain="uxcopyblog.com" src="https://plausible.io/js/plausible.js"></script>
 
 </head>
 
@@ -78,37 +81,30 @@
 
                 <div class="sharing_button_wrapper">
 
-                    <button class="sharing_button_linkedin">
+                    <div class="sharing_button">
                         <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.uxcopyblog.com/essentials_error_messages.html" target="_blank" class="linkedin-share">
-                            <i class="icon_linkedin">
-                                <svg class="svg_linkedin" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
-                            </i>
+                            <svg class="svg_linkedin" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
                         </a>
-                    </button>
+                    </div>
                     
-                    <button class="sharing_button_twitter">
+                    <div class="sharing_button">
                         <a href="https://twitter.com/share?text=Learn to write error messages that help users fix problems 👉&url=https://www.uxcopyblog.com/essentials_error_messages.html&hashtags=UXwriting,UX,copywriting" target="_blank" class="twitter-share">
-                            <i class="icon_twitter">
-                                <svg class="svg_twitter" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
-                            </i>
+                            <svg class="svg_twitter" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
                         </a>
-                    </button>
+                    </div>
 
-                    <button class="sharing_button_mail">
+                    <div class="sharing_button">
                         <a href="mailto: ?subject=UX COPY BLOG | UX Writing Essentials: Error Messages&body=https://www.uxcopyblog.com/essentials_error_messages.html" target="_blank" class="email-share">
-                            <i class="icon_mail">
-                                <svg class="svg_mail" xmlns="http://www.w3.org/2000/svg" width="17px" height="17px" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/></svg>
-                            </i>
+                            <svg class="svg_mail" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/></svg>
                         </a>
-                    </button>
+                    </div>
 
                     <input type="text" value="https://www.uxcopyblog.com/essentials_error_messages.html" id="myInput" readonly>
                     
-                    <button class="sharing_button_link" onclick="copyText()">
-                        <i class="icon_link">
-                            <svg class="svg_link" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 24 24"><path d="M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-1.311 1.311-3.44 1.3-4.74 0-.303-.303-.564-.68-.727-1.051l-2.246 2.245c.236.358.481.667.796.982.812.812 1.846 1.417 3.036 1.704 1.542.371 3.194.166 4.613-.617.518-.286 1.005-.648 1.444-1.087l4.304-4.305c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z"/></svg>
-                        </i>
-                    </button>
+                    <div class="sharing_button sb_link">
+                        <svg class="svg_link" onclick="copyText()" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path d="M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-1.311 1.311-3.44 1.3-4.74 0-.303-.303-.564-.68-.727-1.051l-2.246 2.245c.236.358.481.667.796.982.812.812 1.846 1.417 3.036 1.704 1.542.371 3.194.166 4.613-.617.518-.286 1.005-.648 1.444-1.087l4.304-4.305c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z"/></svg>
+                    </div>
+
                     <div id="snackbar">Link copied!</div>
 
                 </div>
@@ -139,7 +135,7 @@
         </p>
 
         <p class="copy_with_list">
-            So don’t think of your error messages as, “Oh my god, something went wrong”, but rather: “Something went wrong. Here’s how you can fix it.” 
+            So don’t think of your error messages as, “Oh my god, something went wrong", but rather: “Something went wrong. Here’s how you can fix it." 
             To do that, your error message should answer these 3 questions:
             <ol>
                 <li>
@@ -176,14 +172,14 @@
         <p>
             <span class="bold_black">Heading</span><br>
             Give a concise summary of the problem. 
-            Avoid ambiguity (e.g., “Something went wrong”), don’t be apologetic (e.g., “We’re sorry, but…”) and don't try to deflect the problem ("Oops..."). 
+            Avoid ambiguity (e.g., “Something went wrong"), don’t be apologetic (e.g., “We’re sorry, but…") and don't try to deflect the problem ("Oops..."). 
             Be clear about what has happened.
         </p>
 
         <p>
             <span class="bold_black">Body copy</span><br>
             Your body copy should do two things. It should explain the problem. Go into a bit more detail, but keep it concise.
-            And it should offer an actionable solution. That way, users don't get stuck in a “dead end”.
+            And it should offer an actionable solution. That way, users don't get stuck in a “dead end".
         </p>
 
         <p>
@@ -206,7 +202,7 @@
         <p>
             When trying to find the right tone for your error message, imagine the user’s mindset. 
             It’s usually not going to be pleasant, and the emotions might range from mild annoyance to anxiety or full-on anger. 
-            In any case, nowhere in the “happy” spectrum. 
+            In any case, nowhere in the “happy" spectrum. 
         </p>
 
         <p>
@@ -243,7 +239,7 @@
         <p>
             <span class="bold_black">Inline error messages</span><br>
             These appear while the user is entering information, usually on form fields. 
-            If a user makes a mistake, don't blame them (“You entered a wrong password!”). 
+            If a user makes a mistake, don't blame them (“You entered a wrong password!"). 
             Instead, make your message positive and actionable: 
         </p>
 
@@ -269,9 +265,16 @@
             They're usually not the most high-stakes kind of error, so you can use it as an opportunity to let your project’s character shine through. 
             Just make sure to spell out the 404 error code and add a link that takes users back to the home page.
         </p>
-
-        <div class="article_picture_wrapper">
-            <img alt="Pixar's 404 page" class="article_image" src="_assets/essentials_errors/errors_low.png" data-src="_assets/essentials_errors/errors_4.svg">
+        
+        <div class="article_picture_full_wrapper">
+            <img 
+            alt="Pixar's 404 page" 
+            class="article_image" 
+            src="_assets/essentials_errors/errors_low.png" 
+            data-src="_assets/essentials_errors/errors_4_2400.jpg"
+            data-srcset="_assets/essentials_errors/errors_4_1200.jpg 1200w, _assets/essentials_errors/errors_4_2400.jpg 2400w"
+            data-sizes="(max-width: 1024px) 1200px, 2400px"
+            >
             <span class="image_description"><a href="https://www.pixar.com/404" target="_blank" class="desc-link">Pixar's 404 page</a></span>
         </div>
 
@@ -280,7 +283,7 @@
         </h3>
 
         <p>
-            I’ve found that, quite often, developers want to cover multiple error scenarios with a single, “generic” error message. 
+            I’ve found that, quite often, developers want to cover multiple error scenarios with a single, “generic" error message. 
             While this can save some work, it doesn’t make sense from a user’s perspective. 
             Generic messages are vague by definition and offer little opportunity to actually solve a problem. 
             Generally, go for one error message per error scenario. 
@@ -313,7 +316,7 @@
 
         <div class="latest_article">
             <div class="preview_image_latest_wrapper">
-                <img class="preview_image_small" src="_assets/home/essentials_headlines_small.svg" alt="Headlines in different situations">
+                <img class="preview_image_small" src="_assets/essentials_headlines/headlines_header.svg" alt="Headlines in different situations">
                 <a href="essentials_headlines.html">
                     <div class="preview_image_latest_overlay"></div>
                     <i class="icon_eye">
@@ -337,7 +340,7 @@
 
         <div class="latest_article">
             <div class="preview_image_latest_wrapper">
-                <img class="preview_image_small" src="_assets/home/essentials_ctas_small.svg" alt="A call-to-action button">
+                <img class="preview_image_small" src="_assets/essentials_ctas/ctas_header.svg" alt="A call-to-action button">
                 <a href="essentials_ctas.html">
                     <div class="preview_image_latest_overlay"></div>
                     <i class="icon_eye">
