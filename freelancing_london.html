@@ -23,6 +23,7 @@
     <meta property="og:locale" content="en_GB"/>
 
     <!-- Twitter Cards -->
+    <meta property="twitter:card" content="summary_large_image"/>
     <meta name="twitter:title" content="UX COPY BLOG | Freelancing in London (As an EU Citizen)"/>
     <meta name="twitter:description" content="Moving to London? Here are some tips to help you get up and running."/>
     <meta name="twitter:image" content="https://www.uxcopyblog.com/_assets/freelancing_london/freelancing_london_twitter_image.jpg"/>
@@ -43,18 +44,18 @@
 
     <header id="header">
         <div class="header_copy">
-            <a href="index.html" class="logo">
-                <div class="logo_box">
-                    <div class="logo_left">UX</div> 
+            <a class="logo" aria-label="Home" href="index.html">
+                <div class="logo_box" aria-hidden="true">
+                    <div class="logo_left" aria-hidden="true">UX</div> 
                 </div>
-                <div class="logo_right">COPY BLOG</div>
+                <div class="logo_right" aria-hidden="true">COPY BLOG</div>
             </a>
 
             <div id="headline" class="header_headline hide">
                 Freelancing in London (As an EU Citizen)
             </div> 
         </div>  
-        <div class="progress"></div>
+        <div aria-hidden="true" class="progress"></div>
     </header>    
    
      
@@ -64,12 +65,14 @@
 <article>
     <div class="article_content">
 
-        <h1 class="article_headline">Freelancing in London (As an EU Citizen)</h1>
+        <h1>
+            Freelancing in London (As an EU Citizen)
+        </h1>
 
-        <h2>
+        <p class="introduction">
             I moved to London six years ago to work as a freelance writer, and so far, it’s been a great experience. 
             London is one of the most competitive places in the world for creative talent, and it’s an awesome place to live.    
-        </h2>
+        </p>
 
         <!-- Sharing & time -->
 
@@ -83,30 +86,26 @@
             <div class="time-share-right">
 
                 <div class="sharing_button_wrapper">
-
-                    <div class="sharing_button">
-                        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.uxcopyblog.com/freelancing_london.html" target="_blank" class="linkedin-share">
-                            <svg class="svg_linkedin" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
-                        </a>
-                    </div>
                     
-                    <div class="sharing_button">
-                        <a href="https://twitter.com/share?text=Moving to London? Here are some tips to help you get up and running 👉 &url=https://www.uxcopyblog.com/freelancing_london.html&hashtags=UXwriting,UX,copywriting" target="_blank" class="twitter-share">
-                            <svg class="svg_twitter" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
-                        </a>
-                    </div>
-
-                    <div class="sharing_button">
-                        <a href="mailto: ?subject=UX COPY BLOG | Freelancing in London (As an EU Citizen)&body=https://www.uxcopyblog.com/freelancing_london.html" target="_blank" class="email-share">
-                            <svg class="svg_mail" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/></svg>
-                        </a>
-                    </div>
-
-                    <input type="text" value="https://www.uxcopyblog.com/freelancing_london.html" id="myInput" readonly>
+                    <a aria-label="Share this article on Twitter" class="sharing_button" href="https://twitter.com/share?text=Moving to London? Here are some tips to help you get up and running 👉 &url=https://www.uxcopyblog.com/freelancing_london.html&hashtags=UXwriting,UX,copywriting" target="_blank" rel="noopener noreferrer" class="twitter-share">
+                        <svg class="svg_twitter" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+                            <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                        </svg>
+                    </a>
                     
-                    <div class="sharing_button sb_link">
-                        <svg class="svg_link" onclick="copyText()" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path d="M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-1.311 1.311-3.44 1.3-4.74 0-.303-.303-.564-.68-.727-1.051l-2.246 2.245c.236.358.481.667.796.982.812.812 1.846 1.417 3.036 1.704 1.542.371 3.194.166 4.613-.617.518-.286 1.005-.648 1.444-1.087l4.304-4.305c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z"/></svg>
-                    </div>
+                    <a aria-label="Share this article by email" class="sharing_button" href="mailto: ?subject=UX COPY BLOG | Freelancing in London (As an EU Citizen)&body=https://www.uxcopyblog.com/freelancing_london.html" target="_blank" rel="noopener noreferrer" class="email-share">
+                        <svg class="svg_mail" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+                            <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
+                        </svg>
+                    </a>
+                    
+                    <input type="text" value="https://www.uxcopyblog.com/freelancing_london.html" id="myInput" readonly aria-hidden="true" tabindex="-1">
+                    
+                    <button aria-label="Copy link to this article" class="sharing_button_link">
+                        <svg class="svg_link" aria-hidden="true" onclick="copyText()" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+                            <path d="M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-1.311 1.311-3.44 1.3-4.74 0-.303-.303-.564-.68-.727-1.051l-2.246 2.245c.236.358.481.667.796.982.812.812 1.846 1.417 3.036 1.704 1.542.371 3.194.166 4.613-.617.518-.286 1.005-.648 1.444-1.087l4.304-4.305c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z"/>
+                        </svg>
+                    </button>
 
                     <div id="snackbar">Link copied!</div>
                     
@@ -119,13 +118,13 @@
     <!-- Article | Content -->
 
     <img 
-    srcset="_assets/freelancing_london/freelancing_london_header_1200.jpg 1200w, _assets/freelancing_london/freelancing_london_header_2400.jpg 2400w, _assets/freelancing_london/freelancing_london_header_4800.jpg 4800w"
-    sizes="(max-width: 800px) 1200px, (max-width: 1280px) 2400px, 4800px"
+    srcset="_assets/freelancing_london/freelancing_london_header_600.jpg 600w, _assets/freelancing_london/freelancing_london_header_1200.jpg 1200w, _assets/freelancing_london/freelancing_london_header_2400.jpg 2400w, _assets/freelancing_london/freelancing_london_header_4800.jpg 4800w"
+    sizes="(max-width: 600px) 600px, (max-width: 800px) 1200px, (max-width: 1280px) 2400px, 4800px"
     src="_assets/freelancing_london/freelancing_london_header_2400.jpg"
     class="header_image_with_description"
     alt="Person working in a café"
     >
-    <span class="image_description">Photo by <a href="https://unsplash.com/@jonasleupe" target="_blank" class="desc-link">Jonas Leupe</a></span>
+    <span class="image_description">Photo by <a href="https://unsplash.com/@jonasleupe" target="_blank" rel="noopener noreferrer" class="desc-link">Jonas Leupe</a></span>
 
     <div class="article_content">
 
@@ -145,9 +144,9 @@
             I hope this helps if you’re also about to make the jump.
         </p>
         
-        <h3>
+        <h2>
             Find a place to stay
-        </h3>
+        </h2>
 
         <p>
             London is one of the world’s most expensive cities, and rents can be ridiculously high. 
@@ -163,7 +162,7 @@
         </p>
 
         <p>
-            Start your room hunt on <a href="https://www.spareroom.co.uk/" target="_blank" class="text-link">a flatshare platform like Spareroom</a>, get a UK SIM card and start calling people. 
+            Start your room hunt on <a href="https://www.spareroom.co.uk/" target="_blank" rel="noopener noreferrer" class="text-link">a flatshare platform like Spareroom</a>, get a UK SIM card and start calling people. 
             In terms of location, I’d suggest avoiding the hip, expensive areas like Hackney and Shoreditch. 
             But wherever you decide to move, make sure you have Tube, DLR or Overground station nearby. 
             Busses are great, but they're quite slow. 
@@ -177,9 +176,9 @@
             Get a feel for the area first.
         </p>
         
-        <h3>
+        <h2>
             Get a bank account
-        </h3>
+        </h2>
 
         <p>
             Getting a bank account can be a pain in the ass. Go to a bank of your choice and apply for the most basic account. 
@@ -195,16 +194,16 @@
 
         <p>
             Instead of trying your luck at high street banks like HSBC or Barclays, you can also apply for an account with one of London’s many “neo-banks" and fintech start-ups. 
-            <a href="uk_banking.html" target="_blank" class="text-link">Here’s an article about alternative bank accounts for freelancers</a>
+            <a href="uk_banking.html" target="_blank" rel="noopener noreferrer" class="text-link">Here’s an article about alternative bank accounts for freelancers</a>
         </p>
 
-        <h3>
+        <h2>
             National Insurance
-        </h3>
+        </h2>
 
         <p>
             This is easy. You need a National Insurance (NI) number to work (and pay taxes) in the UK. 
-            Just <a href="https://www.gov.uk/apply-national-insurance-number" target="_blank" class="text-link">apply for your NI number online</a> and visit your local Jobcentre for a quick interview. 
+            Just <a href="https://www.gov.uk/apply-national-insurance-number" target="_blank" rel="noopener noreferrer" class="text-link">apply for your NI number online</a> and visit your local Jobcentre for a quick interview. 
             And in case somebody tells you otherwise: yes, you can start working if you don’t have one yet.
         </p>
 
@@ -214,15 +213,15 @@
             class="article_image" 
             src="_assets/freelancing_london/freelancing_london_low.png" 
             data-src="_assets/freelancing_london/freelancing_london_1_2400.jpg"
-            data-srcset="_assets/freelancing_london/freelancing_london_1_1200.jpg 1200w, _assets/freelancing_london/freelancing_london_1_2400.jpg 2400w"
-            data-sizes="(max-width: 1024px) 1200px, 2400px"
+            data-srcset="_assets/freelancing_london/freelancing_london_1_600.jpg 600w, _assets/freelancing_london/freelancing_london_1_1200.jpg 1200w, _assets/freelancing_london/freelancing_london_1_2400.jpg 2400w"
+            data-sizes="(max-width: 600px) 600px,(max-width: 1024px) 1200px, 2400px"
             >
-            <span class="image_description">Photo by <a href="https://unsplash.com/@marckleen" target="_blank" class="desc-link">Marc Kleen</a></span>
+            <span class="image_description">Photo by <a href="https://unsplash.com/@marckleen" target="_blank" rel="noopener noreferrer" class="desc-link">Marc Kleen</a></span>
         </div>
 
-        <h3>
+        <h2>
             Taxes 
-        </h3>
+        </h2>
 
         <p>
             As a freelancer you have two choices: you either work with an umbrella company or you set your business up as a limited company. 
@@ -239,30 +238,31 @@
             Not having to worry about invoices and taxes, especially in a foreign country, is very helpful. 
             However, at some point I’d suggest setting up a limited company, which is a more tax-efficient way of doing business. 
             Starting a limited company is easy and cheap, but I would highly recommend finding an account. 
-            If you don’t have your own accountant, you can use <a href="https://www.crunch.co.uk/" target="_blank" class="text-link">an online accounting service like Crunch</a>. 
+            If you don’t have your own accountant, you can use <a href="https://www.crunch.co.uk/" target="_blank" rel="noopener noreferrer" class="text-link">an online accounting service like Crunch</a>. 
             I haven’t used them myself, but I’ve heard good things.
         </p>
 
         <div class="small_box">
+            <h3>IR35 👻</h3>
             <p class="small_box_copy">
-                <span class="bold_black">IR35 👻</span> <br>
                 IR35 is a piece of tax legislation that’s designed to stop companies from hiring people as freelancers when they’re in fact just “disguised" full-time employees. 
                 It’s complex, opaque and has caused a lot of problems for freelancers and companies alike.
-                I won’t go into any details about it here, but you should absolutely discuss IR35 with your accountant if you’re planning to work through your own limited company.</p>
+                I won’t go into any details about it here, but you should absolutely discuss IR35 with your accountant if you’re planning to work through your own limited company.
+            </p>
         </div>
 
-        <h3>
+        <h2>
             Healthcare
-        </h3>
+        </h2>
 
         <p>
             The National Health Care system NHS is free for all UK residents. 
             Just make sure that you register with your local general practitioner (GP) when you move into your new place. 
         </p>
 
-        <h3>
+        <h2>
             Find work
-        </h3>
+        </h2>
 
         <p>
             Most agencies and companies don’t look for freelancers directly. 
@@ -283,20 +283,20 @@
         </p>
 
         <ul>
-            <li>
-                <a href="https://ifyoucouldjobs.com/" target="_blank" class="text-link">If You Could Jobs</a>
+            <li class="list-link"> 
+                <a href="https://ifyoucouldjobs.com/" target="_blank" rel="noopener noreferrer">If You Could Jobs</a>
             </li>
-            <li>
-                <a href="https://jobs.designweek.co.uk/" target="_blank" class="text-link">Designweek Jobs</a>
+            <li class="list-link">
+                <a href="https://jobs.designweek.co.uk/" target="_blank" rel="noopener noreferrer">Designweek Jobs</a>
             </li>
-            <li>
-                <a href="https://creativepool.com/jobs/" target="_blank" class="text-link">Creativepool Jobs</a>
+            <li class="list-link">
+                <a href="https://creativepool.com/jobs/" target="_blank" rel="noopener noreferrer">Creativepool Jobs</a>
             </li>
         </ul>
 
-        <h3>
+        <h2>
             Portfolio and CV
-        </h3>
+        </h2>
 
         <p>
             I think there’s already a lot of great information out there on how to create portfolios and CVs. 
@@ -307,9 +307,9 @@
             And since preparing a good portfolio and CV takes time, do it before you move.
         </p>
 
-        <h3>
+        <h2>
             Take it easy
-        </h3>
+        </h2>
 
         <p>
             Moving to London can seem like a big step, but don’t freak yourself out. Just go. 
@@ -320,6 +320,51 @@
 
 </article>
 
+<!-- Bottom share bar -->
+
+<aside class="sharing_bottom_wrapper">
+
+    <div class="sharing_bottom">
+
+        <div class="sharing_bottom_left">
+            <div class="sharing_bottom_intro">Share this article:</div>
+        </div>     
+    
+        <div class="sharing_bottom_right">
+    
+            <div class="sharing_button_wrapper">
+                
+                
+                <a aria-label="Share this article on Twitter" class="sharing_button" href="https://twitter.com/share?text=Moving to London? Here are some tips to help you get up and running 👉 &url=https://www.uxcopyblog.com/freelancing_london.html&hashtags=UXwriting,UX,copywriting" target="_blank" rel="noopener noreferrer" class="twitter-share">
+                    <svg class="svg_twitter" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                    </svg>
+                </a>
+               
+                <a aria-label="Share this article by email" class="sharing_button" href="mailto: ?subject=UX COPY BLOG | Freelancing in London (As an EU Citizen)&body=https://www.uxcopyblog.com/freelancing_london.html" target="_blank" rel="noopener noreferrer" class="email-share">
+                    <svg class="svg_mail" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+                        <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
+                    </svg>
+                </a>
+    
+                <input type="text" value="https://www.uxcopyblog.com/freelancing_london.html" id="myInput_bottom" readonly aria-hidden="true" tabindex="-1">
+                
+                <button aria-label="Copy link to this article" class="sharing_button_link">
+                    <svg class="svg_link" aria-hidden="true" onclick="copyTextBottom()" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+                        <path d="M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-1.311 1.311-3.44 1.3-4.74 0-.303-.303-.564-.68-.727-1.051l-2.246 2.245c.236.358.481.667.796.982.812.812 1.846 1.417 3.036 1.704 1.542.371 3.194.166 4.613-.617.518-.286 1.005-.648 1.444-1.087l4.304-4.305c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z"/>
+                    </svg>
+                </button>
+    
+                <div id="snackbar_bottom">Link copied!</div>
+    
+            </div>
+
+        </div>
+
+    </div>
+
+</aside>
+
 <!-- Related content -->
 
 <div class="related_content">
@@ -327,22 +372,28 @@
 
         <div class="latest_article">
             <div class="preview_image_latest_wrapper">
-                <img class="preview_image_small" src="_assets/uk_banking/uk_banking_header_1200.jpg" alt="A five-pound note">
-                <a href="uk_banking.html">
+                <img 
+                    srcset="_assets/uk_banking/uk_banking_header_1200.jpg 1200w, _assets/uk_banking/uk_banking_header_600.jpg 600w"
+                    sizes="(max-width: 600px) 600px, 1200px"
+                    src="_assets/uk_banking/uk_banking_header_1200.jpg"
+                    class="preview_image_small"
+                    alt="A five-pound note"
+                >
+                <a href="uk_banking.html" aria-label="Visit article UK Banking for EU Freelancers" tabindex="-1" class="image_link">
                     <div class="preview_image_latest_overlay"></div>
-                    <i class="icon_eye">
-                        <svg width="100" height="" viewBox="0 0 280 224" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#fff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" d="M33.799 83.165L11.944 57.119M82.746 52.219l-11.628-31.95M140 42V8M246.2 83.165l21.855-26.046M197.254 52.219l11.628-31.95M139.914 88C75.64 88 37.857 128.497 27 148.746 27 155.254 73.686 216 139.914 216c61.669 0 102.419-44.836 115.086-67.254C243.419 128.497 204.189 88 139.914 88z"/><mask id="a" fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z"/></mask><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z" fill="#fff"/><path d="M182.203 152c0 22.812-18.492 41.305-41.305 41.305v2c23.917 0 43.305-19.388 43.305-43.305h-2zm-41.305-41.305c22.813 0 41.305 18.493 41.305 41.305h2c0-23.917-19.388-43.305-43.305-43.305v2zM99.593 152c0-22.812 18.493-41.305 41.305-41.305v-2c-23.916 0-43.305 19.388-43.305 43.305h2zm41.305 41.305c-22.812 0-41.305-18.493-41.305-41.305h-2c0 23.917 19.389 43.305 43.305 43.305v-2zm2.255-51.068c0 7.835-6.352 14.187-14.187 14.187v2c8.94 0 16.187-7.247 16.187-16.187h-2zm-14.187-14.186c7.835 0 14.187 6.351 14.187 14.186h2c0-8.939-7.247-16.186-16.187-16.186v2zm-14.186 14.186c0-7.835 6.351-14.186 14.186-14.186v-2c-8.939 0-16.186 7.247-16.186 16.186h2zm14.186 14.187c-7.835 0-14.186-6.352-14.186-14.187h-2c0 8.94 7.247 16.187 16.186 16.187v-2z" fill="#fff" mask="url(#a)"/></svg>
+                    <i class="icon_eye" aria-hidden="true">
+                        <svg width="100" height="100" viewBox="0 0 280 224" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#fff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" d="M33.799 83.165L11.944 57.119M82.746 52.219l-11.628-31.95M140 42V8M246.2 83.165l21.855-26.046M197.254 52.219l11.628-31.95M139.914 88C75.64 88 37.857 128.497 27 148.746 27 155.254 73.686 216 139.914 216c61.669 0 102.419-44.836 115.086-67.254C243.419 128.497 204.189 88 139.914 88z"/><mask id="a" fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z"/></mask><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z" fill="#fff"/><path d="M182.203 152c0 22.812-18.492 41.305-41.305 41.305v2c23.917 0 43.305-19.388 43.305-43.305h-2zm-41.305-41.305c22.813 0 41.305 18.493 41.305 41.305h2c0-23.917-19.388-43.305-43.305-43.305v2zM99.593 152c0-22.812 18.493-41.305 41.305-41.305v-2c-23.916 0-43.305 19.388-43.305 43.305h2zm41.305 41.305c-22.812 0-41.305-18.493-41.305-41.305h-2c0 23.917 19.389 43.305 43.305 43.305v-2zm2.255-51.068c0 7.835-6.352 14.187-14.187 14.187v2c8.94 0 16.187-7.247 16.187-16.187h-2zm-14.187-14.186c7.835 0 14.187 6.351 14.187 14.186h2c0-8.939-7.247-16.186-16.187-16.186v2zm-14.186 14.186c0-7.835 6.351-14.186 14.186-14.186v-2c-8.939 0-16.186 7.247-16.186 16.186h2zm14.186 14.187c-7.835 0-14.186-6.352-14.186-14.187h-2c0 8.94 7.247 16.187 16.186 16.187v-2z" fill="#fff" mask="url(#a)"/></svg>
                     </i>
                 </a>   
             </div>
              <p class="date_line">19 May 2020</p>
              <a href="uk_banking.html" class="headline_link">
-                <h3 class="featured_article_headline">UK Banking for EU Freelancers</h3>
+                <h2 class="featured_article_headline">UK Banking for EU Freelancers</h2>
             </a>
-            <a href="uk_banking.html" class="read_now_link">Read now
+            <a href="uk_banking.html" tabindex="-1" class="read_now_link">Read now
                 <span class="arrow">
-                    <i class="icon_arrow">
-                        <svg class="svg_arrow" xmlns="http://www.w3.org/2000/svg" width="0.9rem" height="0.9rem" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/></svg>
+                    <i class="icon_arrow" aria-hidden="true">
+                        <svg aria-hidden="true" class="svg_arrow" xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/></svg>
                     </i>
                 </span>
             </a>
@@ -350,23 +401,29 @@
 
         <div class="latest_article">
             <div class="preview_image_latest_wrapper">
-                <img class="preview_image_small" src="_assets/free_tools/free_tools_header_1200.jpg" alt="Photo of a laptop and a cup of coffee">
-                <a href="free_tools.html">
+                <img 
+                    srcset="_assets/free_tools/free_tools_header_1200.jpg 1200w, _assets/free_tools/free_tools_header_600.jpg 600w"
+                    sizes="(max-width: 600px) 600px, 1200px"
+                    src="_assets/free_tools/free_tools_header_1200.jpg"
+                    class="preview_image_small"
+                    alt="Photo of a laptop on a desk"
+                >
+                <a href="free_tools.html" aria-label="Visit article Free Tools for Web Designers" tabindex="-1" class="image_link">
                     <div class="preview_image_latest_overlay"></div>
-                    <i class="icon_eye">
-                        <svg width="100" height="" viewBox="0 0 280 224" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#fff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" d="M33.799 83.165L11.944 57.119M82.746 52.219l-11.628-31.95M140 42V8M246.2 83.165l21.855-26.046M197.254 52.219l11.628-31.95M139.914 88C75.64 88 37.857 128.497 27 148.746 27 155.254 73.686 216 139.914 216c61.669 0 102.419-44.836 115.086-67.254C243.419 128.497 204.189 88 139.914 88z"/><mask id="a" fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z"/></mask><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z" fill="#fff"/><path d="M182.203 152c0 22.812-18.492 41.305-41.305 41.305v2c23.917 0 43.305-19.388 43.305-43.305h-2zm-41.305-41.305c22.813 0 41.305 18.493 41.305 41.305h2c0-23.917-19.388-43.305-43.305-43.305v2zM99.593 152c0-22.812 18.493-41.305 41.305-41.305v-2c-23.916 0-43.305 19.388-43.305 43.305h2zm41.305 41.305c-22.812 0-41.305-18.493-41.305-41.305h-2c0 23.917 19.389 43.305 43.305 43.305v-2zm2.255-51.068c0 7.835-6.352 14.187-14.187 14.187v2c8.94 0 16.187-7.247 16.187-16.187h-2zm-14.187-14.186c7.835 0 14.187 6.351 14.187 14.186h2c0-8.939-7.247-16.186-16.187-16.186v2zm-14.186 14.186c0-7.835 6.351-14.186 14.186-14.186v-2c-8.939 0-16.186 7.247-16.186 16.186h2zm14.186 14.187c-7.835 0-14.186-6.352-14.186-14.187h-2c0 8.94 7.247 16.187 16.186 16.187v-2z" fill="#fff" mask="url(#a)"/></svg>
+                    <i class="icon_eye" aria-hidden="true">
+                        <svg aria-hidden="true" width="100" height="100" viewBox="0 0 280 224" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#fff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" d="M33.799 83.165L11.944 57.119M82.746 52.219l-11.628-31.95M140 42V8M246.2 83.165l21.855-26.046M197.254 52.219l11.628-31.95M139.914 88C75.64 88 37.857 128.497 27 148.746 27 155.254 73.686 216 139.914 216c61.669 0 102.419-44.836 115.086-67.254C243.419 128.497 204.189 88 139.914 88z"/><mask id="a" fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z"/></mask><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z" fill="#fff"/><path d="M182.203 152c0 22.812-18.492 41.305-41.305 41.305v2c23.917 0 43.305-19.388 43.305-43.305h-2zm-41.305-41.305c22.813 0 41.305 18.493 41.305 41.305h2c0-23.917-19.388-43.305-43.305-43.305v2zM99.593 152c0-22.812 18.493-41.305 41.305-41.305v-2c-23.916 0-43.305 19.388-43.305 43.305h2zm41.305 41.305c-22.812 0-41.305-18.493-41.305-41.305h-2c0 23.917 19.389 43.305 43.305 43.305v-2zm2.255-51.068c0 7.835-6.352 14.187-14.187 14.187v2c8.94 0 16.187-7.247 16.187-16.187h-2zm-14.187-14.186c7.835 0 14.187 6.351 14.187 14.186h2c0-8.939-7.247-16.186-16.187-16.186v2zm-14.186 14.186c0-7.835 6.351-14.186 14.186-14.186v-2c-8.939 0-16.186 7.247-16.186 16.186h2zm14.186 14.187c-7.835 0-14.186-6.352-14.186-14.187h-2c0 8.94 7.247 16.187 16.186 16.187v-2z" fill="#fff" mask="url(#a)"/></svg>
                     </i>
                 </a>   
             </div>
-
+        
             <p class="date_line">13 May 2020</p>
             <a href="free_tools.html" class="headline_link">
-                <h3 class="featured_article_headline">Free Tools for Web Designers</h3>
+                <h2 class="featured_article_headline">Free Tools for Web Designers</h2>
             </a>
-            <a href="free_tools.html" class="read_now_link">Read now
+            <a href="free_tools.html" tabindex="-1" class="read_now_link">Read now
                 <span class="arrow">
-                    <i class="icon_arrow">
-                        <svg class="svg_arrow" xmlns="http://www.w3.org/2000/svg" width="0.9rem" height="0.9rem" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/></svg>
+                    <i class="icon_arrow" aria-hidden="true">
+                        <svg aria-hidden="true" class="svg_arrow" xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/></svg>
                     </i>
                 </span>
             </a>
@@ -380,27 +437,28 @@
 <!-- Footer -->
 
 <footer>
+
     <div class="footer_copy">
-        A Quarantine Project by <br> <a href="https://philipmueller.co.uk/" target="_blank" class="footer_link">PHILIP MUELLER</a>
+        A Quarantine Project by <br> 
+        <a href="https://philipmueller.co.uk/" target="_blank" rel="noopener noreferrer" class="footer_link">PHILIP MUELLER</a>
     </div>
 
     <div class="footer_follow">
-        <button class="follow-button_linkedin">
-            <a href="https://www.linkedin.com/in/philipm83/" target="_blank" class="linkedin-follow">
-                <i class="linkedin-follow">
-                    <svg class="svg_linkedin-follow" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
-                </i>
-            </a>
-        </button>
-    
-        <button class="follow-button_twitter">
-            <a href="https://twitter.com/PhilipMuellerUX" target="_blank" class="twitter-follow">
-                <i class="twitter-follow">
-                    <svg class="svg_twitter-follow" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
-                </i>
-            </a>
-        </button>
+
+        <a aria-label="Visit my LinkedIn profile" class="follow-button_linkedin" href="https://www.linkedin.com/in/philipm83/" target="_blank" rel="noopener noreferrer">
+            <svg class="svg_linkedin-follow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+                <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+            </svg>
+        </a>
+       
+        <a aria-label="Visit my Twitter profile" class="follow-button_twitter" href="https://twitter.com/PhilipMuellerUX" target="_blank" rel="noopener noreferrer">
+            <svg class="svg_twitter-follow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+            </svg>
+        </a>
+        
     </div>
+
 </footer>
 
 <script src="main.js"></script>

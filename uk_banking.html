@@ -23,6 +23,7 @@
     <meta property="og:locale" content="en_GB"/>
 
     <!-- Twitter Cards -->
+    <meta property="twitter:card" content="summary_large_image"/>
     <meta name="twitter:title" content="UX COPY BLOG | UK Banking for EU Freelancers"/>
     <meta name="twitter:description" content="Compare personal and business bank accounts from London's hottest fintech start-ups."/>
     <meta name="twitter:image" content="https://www.uxcopyblog.com/_assets/uk_banking/uk_banking_twitter_image.jpg"/>
@@ -43,18 +44,18 @@
 
     <header id="header">
         <div class="header_copy">
-            <a href="index.html" class="logo">
-                <div class="logo_box">
-                    <div class="logo_left">UX</div> 
+            <a class="logo" aria-label="Home" href="index.html">
+                <div class="logo_box" aria-hidden="true">
+                    <div class="logo_left" aria-hidden="true">UX</div> 
                 </div>
-                <div class="logo_right">COPY BLOG</div>
+                <div class="logo_right" aria-hidden="true">COPY BLOG</div>
             </a>
 
             <div id="headline" class="header_headline hide">
                 UK Banking for EU Freelancers
             </div> 
         </div>  
-        <div class="progress"></div>
+        <div aria-hidden="true" class="progress"></div>
     </header>   
     
 <!-- Article | Heading -->
@@ -62,12 +63,14 @@
 <article>
     <div class="article_content">
 
-        <h1 class="article_headline">UK Banking for EU Freelancers</h1>
+        <h1>
+            UK Banking for EU Freelancers
+        </h1>
 
-        <h2>
+        <p class="introduction">
             Setting up a bank account in the UK can be a hassle, especially if you’ve just arrived from abroad and you want to go freelance. 
             But thanks to London’s thriving fintech scene, there are a number of banking start-ups that can help you get up and running in no time.    
-        </h2>
+        </p>
 
         <!-- Sharing & time -->
 
@@ -81,30 +84,26 @@
             <div class="time-share-right">
 
                 <div class="sharing_button_wrapper">
-
-                    <div class="sharing_button">
-                        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.uxcopyblog.com/uk_banking.html" target="_blank" class="linkedin-share">
-                            <svg class="svg_linkedin" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
-                        </a>
-                    </div>
                     
-                    <div class="sharing_button">
-                        <a href="https://twitter.com/share?text=Compare personal and business bank accounts from London's hottest fintech start-ups 👉 &url=https://www.uxcopyblog.com/uk_banking.html&hashtags=UXwriting,UX,copywriting" target="_blank" class="twitter-share">
-                            <svg class="svg_twitter" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
-                        </a>
-                    </div>
-
-                    <div class="sharing_button">
-                        <a href="mailto: ?subject=UX COPY BLOG | UK Banking for EU Freelancers&body=https://www.uxcopyblog.com/uk_banking.html" target="_blank" class="email-share">
-                            <svg class="svg_mail" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/></svg>
-                        </a>
-                    </div>
-
-                    <input type="text" value="https://www.uxcopyblog.com/uk_banking.html" id="myInput" readonly>
+                    <a aria-label="Share this article on Twitter" class="sharing_button" href="https://twitter.com/share?text=Compare personal and business bank accounts from London's hottest fintech start-ups 👉 &url=https://www.uxcopyblog.com/uk_banking.html&hashtags=UXwriting,UX,copywriting" target="_blank" rel="noopener noreferrer" class="twitter-share">
+                        <svg class="svg_twitter" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+                            <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                        </svg>
+                    </a>
                     
-                    <div class="sharing_button sb_link">
-                        <svg class="svg_link" onclick="copyText()" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path d="M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-1.311 1.311-3.44 1.3-4.74 0-.303-.303-.564-.68-.727-1.051l-2.246 2.245c.236.358.481.667.796.982.812.812 1.846 1.417 3.036 1.704 1.542.371 3.194.166 4.613-.617.518-.286 1.005-.648 1.444-1.087l4.304-4.305c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z"/></svg>
-                    </div>
+                    <a aria-label="Share this article by email" class="sharing_button" href="mailto: ?subject=UX COPY BLOG | UK Banking for EU Freelancers&body=https://www.uxcopyblog.com/uk_banking.html" target="_blank" rel="noopener noreferrer" class="email-share">
+                        <svg class="svg_mail" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+                            <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
+                        </svg>
+                    </a>
+                    
+                    <input type="text" value="https://www.uxcopyblog.com/uk_banking.html" id="myInput" readonly aria-hidden="true" tabindex="-1">
+                    
+                    <button aria-label="Copy link to this article" class="sharing_button_link">
+                        <svg class="svg_link" aria-hidden="true" onclick="copyText()" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+                            <path d="M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-1.311 1.311-3.44 1.3-4.74 0-.303-.303-.564-.68-.727-1.051l-2.246 2.245c.236.358.481.667.796.982.812.812 1.846 1.417 3.036 1.704 1.542.371 3.194.166 4.613-.617.518-.286 1.005-.648 1.444-1.087l4.304-4.305c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z"/>
+                        </svg>
+                    </button>
 
                     <div id="snackbar">Link copied!</div>
 
@@ -117,29 +116,32 @@
     <!-- Article | Content -->
 
     <img 
-        srcset="_assets/uk_banking/uk_banking_header_1200.jpg 1200w, _assets/uk_banking/uk_banking_header_2400.jpg 2400w, _assets/uk_banking/uk_banking_header_4800.jpg 4800w"
-        sizes="(max-width: 800px) 1200px, (max-width: 1280px) 2400px, 4800px"
+        srcset="_assets/uk_banking/uk_banking_header_600.jpg 600w, _assets/uk_banking/uk_banking_header_1200.jpg 1200w, _assets/uk_banking/uk_banking_header_2400.jpg 2400w, _assets/uk_banking/uk_banking_header_4800.jpg 4800w"
+        sizes="(max-width: 600px) 600px, (max-width: 800px) 1200px, (max-width: 1280px) 2400px, 4800px"
         src="_assets/uk_banking/uk_banking_header_2400.jpg"
         class="header_image_with_description" 
         alt="A five-pound note"
     >
 
-    <span class="image_description">Photo by <a href="https://unsplash.com/@veato" target="_blank" class="desc-link">Philip Veater</a></span>
+    <span class="image_description">Photo by <a href="https://unsplash.com/@veato" target="_blank" rel="noopener noreferrer" class="desc-link">Philip Veater</a></span>
 
     <div class="article_content">
 
         <p class="grey_box">
-               <strong>Quick disclaimer:</strong> the following list is just a personal selection of services I find trustworthy. 
+               <strong>Quick disclaimer:</strong> the following list is just a personal selection of services I like. 
                 Use it as a starting point and do your own research. 
                 I’m not affiliated with any of the companies and this is not financial advice.
         </p>
 
-        <h3>
+        <h2>
             Personal bank accounts
+        </h2>
+
+        <h3>
+            Monzo
         </h3>
 
         <p>
-            <span class="bold_black">Monzo</span><br>
             Probably London’s most beloved fintech start-up, Monzo is everywhere and easily recognisable by its bright orange cards. 
             It’s free and offers a fast, painless sign-up through its mobile app. 
             Monzo’s key features revolve around budgeting: instant notifications whenever you spend or receive money, monthly spending targets and “Pots" that let you put money aside.
@@ -149,7 +151,7 @@
             Monzo started out in 2015 with a mobile app and a prepaid debit Mastercard. 
             In April 2017, they received their banking license. 
             That means you get a sort code and an account number, a Mastercard debit card, you can set up standing orders, get an overdraft and your money is protected up to £85,000 by the FSCS. 
-            <br><a href="https://monzo.com/" target="_blank" class="text-link">Check out Monzo</a>
+            <br><a href="https://monzo.com/" target="_blank" rel="noopener noreferrer" class="text-link">Check out Monzo</a>
         </p>
 
         <p class="emoji_list">
@@ -160,8 +162,11 @@
             🔸 Free ATM withdrawals abroad of up to £200/month, 3% charge after that<br><br>
         </p>
 
+        <h3>
+            Starling
+        </h3>
+
         <p>
-            <span class="bold_black">Starling</span><br>
             Starling offers a similar set of features like Monzo. 
             It’s a fully licensed, “mobile-only" bank giving you a dedicated mobile app, a debit Mastercard, UK account details and deposit protection of up to £85,000. 
         </p>
@@ -175,7 +180,7 @@
         <p class="copy_with_list">
             Another interesting thing is that while the world of banks and payment providers can be highly fractured, Starling takes a more inclusive approach. 
             The company has an ever-expanding “Marketplace", which lets other financial services — such as pensions, savings, travel insurance and mortgage brokerage — integrate with the Starling app through a comprehensive API.
-            <br><a href="https://www.starlingbank.com/current-account/" target="_blank" class="text-link">Check out Starling</a>
+            <br><a href="https://www.starlingbank.com/current-account/" target="_blank" rel="noopener noreferrer" class="text-link">Check out Starling</a>
         </p>
 
         <p class="emoji_list">
@@ -186,12 +191,15 @@
             ✅ Zero fees abroad<br>
         </p>
 
-        <h3>
+        <h2>
             Business accounts
+        </h2>
+
+        <h3>
+            Monzo Business
         </h3>
 
         <p>
-            <span class="bold_black">Monzo Business</span><br>
             Monzo Business accounts are relatively new and aimed at small businesses. 
             They offer the same features as their personal accounts, so it’s easy to stay on top of your everyday banking requirements. 
             This basic version is free (in contrast to most high street business bank accounts, which usually charge something between £5 and £10 per month), but you can upgrade to a “Business Pro" account for £5 a month. 
@@ -199,7 +207,7 @@
 
         <p class="copy_with_list">
             The “Business Pro" account gives you some interesting features, such as the ability to create, send and track invoices, connect 3rd party accounting software, and save a percentage of your income in “Tax pots". 
-            <br><a href="https://monzo.com/i/business" target="_blank" class="text-link">Check out Monzo Business</a>
+            <br><a href="https://monzo.com/i/business" target="_blank" rel="noopener noreferrer" class="text-link">Check out Monzo Business</a>
         </p>
 
         <p class="emoji_list">
@@ -212,15 +220,18 @@
             💰 Put money aside for taxes<br><br>
         </p>
 
+        <h3>
+            Starling Business
+        </h3>
+
         <p>
-            <span class="bold_black">Starling Business</span><br>
             Starling’s Business account offering is similar to Monzo’s: a free, easy to set up bank account that lives primarily on your phone and offers instant notifications and simple budgeting overviews. 
         </p>
 
         <p class="copy_with_list">
             In contrast to Monzo, however, Starling is completely free, and there is no upgrade to a “Pro" account. 
             Another potential benefit is the “Business Marketplace", which lets account holders connect to 3rd-party insurance, lending, legal and accounting tools – right through the app. 
-            <br><a href="https://www.starlingbank.com/business-account/" target="_blank" class="text-link">Check out Starling Business</a>
+            <br><a href="https://www.starlingbank.com/business-account/" target="_blank" rel="noopener noreferrer" class="text-link">Check out Starling Business</a>
         </p>
 
         <p class="emoji_list">
@@ -230,8 +241,11 @@
             ✅ Fully licensed bank<br><br>
         </p>
 
+        <h3>
+            Transferwise Borderless
+        </h3>
+
         <p>
-            <span class="bold_black">Transferwise Borderless</span><br>
             Transferwise is not a bank, it’s actually a service that provides fast, low-cost international money transfers. 
             But Transferwise realised that people don’t just send money across borders – sometimes, companies and freelancers <i>work</i> across borders. So Transferwise developed the Borderless account. 
         </p>
@@ -240,7 +254,7 @@
             Here’s how Transferwise works: their transfers are cheaper than most regular bank transfers because money never actually crosses borders. 
             Essentially, if you send money from the UK to, say, France, you deposit your funds in Transferwise’s UK account, and it gets paid out from the company’s French account. 
             Because of its competitive rates, Transferwise has become quite popular in the last couple of years. 
-            <a href="https://www.youtube.com/watch?v=MLKKzRvOsLQ" target="_blank" class="text-link">Learn more about how Transferwise works</a>
+            <a href="https://www.youtube.com/watch?v=MLKKzRvOsLQ" target="_blank" rel="noopener noreferrer" class="text-link">Learn more about how Transferwise works</a>
         </p>
 
         <p>
@@ -254,7 +268,7 @@
             It’s an Electronic Money Institution authorised UK Financial Conduct Authority. 
             Funds are held in a ring-fenced Barclays account, which means: 1) Barclays can’t use your money for any risky parts of its business, such as investment banking, and 2) should Transferwise go out of business, your money is still kept in the Barclays account. 
             However, your funds are not protected by the FSCS.
-            <br><a href="https://transferwise.com/gb/borderless/" target="_blank" class="text-link">Check out Transferwise Borderless</a>
+            <br><a href="https://transferwise.com/gb/borderless/" target="_blank" rel="noopener noreferrer" class="text-link">Check out Transferwise Borderless</a>
         </p>
 
         <p class="emoji_list">
@@ -265,8 +279,11 @@
             ❌ Not protected by the FSCS<br><br>
         </p>
 
+        <h3>
+            There are plenty of other options
+        </h3>
+
         <p>
-            <span class="bold_black">There are plenty of other options</span><br>
             Like I mentioned in the beginning, these are just some examples. Check them out or have a look around for alternatives.
             The UK fintech scene is quite frothy at the moment, and new financial services are popping up all the time. 
         </p>
@@ -275,6 +292,50 @@
 
 </article>
 
+<!-- Bottom share bar -->
+
+<aside class="sharing_bottom_wrapper">
+
+    <div class="sharing_bottom">
+
+        <div class="sharing_bottom_left">
+            <div class="sharing_bottom_intro">Share this article:</div>
+        </div>     
+    
+        <div class="sharing_bottom_right">
+    
+            <div class="sharing_button_wrapper">
+                
+                <a aria-label="Share this article on Twitter" class="sharing_button" href="https://twitter.com/share?text=Compare personal and business bank accounts from London's hottest fintech start-ups 👉 &url=https://www.uxcopyblog.com/uk_banking.html&hashtags=UXwriting,UX,copywriting" target="_blank" rel="noopener noreferrer" class="twitter-share">
+                    <svg class="svg_twitter" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                    </svg>
+                </a>
+                
+                <a aria-label="Share this article by email" class="sharing_button" href="mailto: ?subject=UX COPY BLOG | UK Banking for EU Freelancers&body=https://www.uxcopyblog.com/uk_banking.html" target="_blank" rel="noopener noreferrer" class="email-share">
+                    <svg class="svg_mail" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+                        <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
+                    </svg>
+                </a>
+                
+                <input type="text" value="https://www.uxcopyblog.com/uk_banking.html" id="myInput_bottom" readonly aria-hidden="true" tabindex="-1">
+                
+                <button aria-label="Copy link to this article" class="sharing_button_link">
+                    <svg class="svg_link" aria-hidden="true" onclick="copyTextBottom()" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+                        <path d="M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-1.311 1.311-3.44 1.3-4.74 0-.303-.303-.564-.68-.727-1.051l-2.246 2.245c.236.358.481.667.796.982.812.812 1.846 1.417 3.036 1.704 1.542.371 3.194.166 4.613-.617.518-.286 1.005-.648 1.444-1.087l4.304-4.305c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z"/>
+                    </svg>
+                </button>
+    
+                <div id="snackbar_bottom">Link copied!</div>
+    
+            </div>
+
+        </div>
+
+    </div>
+
+</aside>
+
 <!-- Related content -->
 
 <div class="related_content">
@@ -282,23 +343,29 @@
 
         <div class="latest_article">
             <div class="preview_image_latest_wrapper">
-                <img class="preview_image_small" src="_assets/freelancing_london/freelancing_london_header_1200.jpg" alt="People working in a café">
-                <a href="freelancing_london.html">
+                <img 
+                    srcset="_assets/freelancing_london/freelancing_london_header_1200.jpg 1200w, _assets/freelancing_london/freelancing_london_header_600.jpg 600w"
+                    sizes="(max-width: 600px) 600px, 1200px"
+                    src="_assets/freelancing_london/freelancing_london_header_1200.jpg"
+                    class="preview_image_small"
+                    alt="Person working in a café"
+                >
+                <a href="freelancing_london.html" aria-label="Visit article Freelancing in London (As an EU Citizen)" tabindex="-1" class="image_link">
                     <div class="preview_image_latest_overlay"></div>
-                    <i class="icon_eye">
-                        <svg width="100" height="" viewBox="0 0 280 224" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#fff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" d="M33.799 83.165L11.944 57.119M82.746 52.219l-11.628-31.95M140 42V8M246.2 83.165l21.855-26.046M197.254 52.219l11.628-31.95M139.914 88C75.64 88 37.857 128.497 27 148.746 27 155.254 73.686 216 139.914 216c61.669 0 102.419-44.836 115.086-67.254C243.419 128.497 204.189 88 139.914 88z"/><mask id="a" fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z"/></mask><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z" fill="#fff"/><path d="M182.203 152c0 22.812-18.492 41.305-41.305 41.305v2c23.917 0 43.305-19.388 43.305-43.305h-2zm-41.305-41.305c22.813 0 41.305 18.493 41.305 41.305h2c0-23.917-19.388-43.305-43.305-43.305v2zM99.593 152c0-22.812 18.493-41.305 41.305-41.305v-2c-23.916 0-43.305 19.388-43.305 43.305h2zm41.305 41.305c-22.812 0-41.305-18.493-41.305-41.305h-2c0 23.917 19.389 43.305 43.305 43.305v-2zm2.255-51.068c0 7.835-6.352 14.187-14.187 14.187v2c8.94 0 16.187-7.247 16.187-16.187h-2zm-14.187-14.186c7.835 0 14.187 6.351 14.187 14.186h2c0-8.939-7.247-16.186-16.187-16.186v2zm-14.186 14.186c0-7.835 6.351-14.186 14.186-14.186v-2c-8.939 0-16.186 7.247-16.186 16.186h2zm14.186 14.187c-7.835 0-14.186-6.352-14.186-14.187h-2c0 8.94 7.247 16.187 16.186 16.187v-2z" fill="#fff" mask="url(#a)"/></svg>
+                    <i class="icon_eye" aria-hidden="true">
+                        <svg aria-hidden="true" width="100" height="100" viewBox="0 0 280 224" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#fff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" d="M33.799 83.165L11.944 57.119M82.746 52.219l-11.628-31.95M140 42V8M246.2 83.165l21.855-26.046M197.254 52.219l11.628-31.95M139.914 88C75.64 88 37.857 128.497 27 148.746 27 155.254 73.686 216 139.914 216c61.669 0 102.419-44.836 115.086-67.254C243.419 128.497 204.189 88 139.914 88z"/><mask id="a" fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z"/></mask><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z" fill="#fff"/><path d="M182.203 152c0 22.812-18.492 41.305-41.305 41.305v2c23.917 0 43.305-19.388 43.305-43.305h-2zm-41.305-41.305c22.813 0 41.305 18.493 41.305 41.305h2c0-23.917-19.388-43.305-43.305-43.305v2zM99.593 152c0-22.812 18.493-41.305 41.305-41.305v-2c-23.916 0-43.305 19.388-43.305 43.305h2zm41.305 41.305c-22.812 0-41.305-18.493-41.305-41.305h-2c0 23.917 19.389 43.305 43.305 43.305v-2zm2.255-51.068c0 7.835-6.352 14.187-14.187 14.187v2c8.94 0 16.187-7.247 16.187-16.187h-2zm-14.187-14.186c7.835 0 14.187 6.351 14.187 14.186h2c0-8.939-7.247-16.186-16.187-16.186v2zm-14.186 14.186c0-7.835 6.351-14.186 14.186-14.186v-2c-8.939 0-16.186 7.247-16.186 16.186h2zm14.186 14.187c-7.835 0-14.186-6.352-14.186-14.187h-2c0 8.94 7.247 16.187 16.186 16.187v-2z" fill="#fff" mask="url(#a)"/></svg>
                     </i>
                 </a>   
             </div>
-
+        
             <p class="date_line">20 May 2020</p>
             <a href="freelancing_london.html" class="headline_link">
-                <h3 class="featured_article_headline">Freelancing in London (As an EU Citizen)</h3>
+                <h2 class="featured_article_headline">Freelancing in London (As an EU Citizen)</h2>
             </a>
-            <a href="freelancing_london.html" class="read_now_link">Read now
+            <a href="freelancing_london.html" tabindex="-1" class="read_now_link">Read now
                 <span class="arrow">
-                    <i class="icon_arrow">
-                        <svg class="svg_arrow" xmlns="http://www.w3.org/2000/svg" width="0.9rem" height="0.9rem" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/></svg>
+                    <i class="icon_arrow" aria-hidden="true">
+                        <svg aria-hidden="true" class="svg_arrow" xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/></svg>
                     </i>
                 </span>
             </a>
@@ -306,23 +373,29 @@
 
         <div class="latest_article">
             <div class="preview_image_latest_wrapper">
-                <img class="preview_image_small" src="_assets/free_tools/free_tools_header_1200.jpg" alt="Photo of a laptop and a cup of coffee">
-                <a href="free_tools.html">
+                <img 
+                    srcset="_assets/free_tools/free_tools_header_1200.jpg 1200w, _assets/free_tools/free_tools_header_600.jpg 600w"
+                    sizes="(max-width: 600px) 600px, 1200px"
+                    src="_assets/free_tools/free_tools_header_1200.jpg"
+                    class="preview_image_small"
+                    alt="Photo of a laptop on a desk"
+                >
+                <a href="free_tools.html" aria-label="Visit article Free Tools for Web Designers" tabindex="-1" class="image_link">
                     <div class="preview_image_latest_overlay"></div>
-                    <i class="icon_eye">
-                        <svg width="100" height="" viewBox="0 0 280 224" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#fff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" d="M33.799 83.165L11.944 57.119M82.746 52.219l-11.628-31.95M140 42V8M246.2 83.165l21.855-26.046M197.254 52.219l11.628-31.95M139.914 88C75.64 88 37.857 128.497 27 148.746 27 155.254 73.686 216 139.914 216c61.669 0 102.419-44.836 115.086-67.254C243.419 128.497 204.189 88 139.914 88z"/><mask id="a" fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z"/></mask><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z" fill="#fff"/><path d="M182.203 152c0 22.812-18.492 41.305-41.305 41.305v2c23.917 0 43.305-19.388 43.305-43.305h-2zm-41.305-41.305c22.813 0 41.305 18.493 41.305 41.305h2c0-23.917-19.388-43.305-43.305-43.305v2zM99.593 152c0-22.812 18.493-41.305 41.305-41.305v-2c-23.916 0-43.305 19.388-43.305 43.305h2zm41.305 41.305c-22.812 0-41.305-18.493-41.305-41.305h-2c0 23.917 19.389 43.305 43.305 43.305v-2zm2.255-51.068c0 7.835-6.352 14.187-14.187 14.187v2c8.94 0 16.187-7.247 16.187-16.187h-2zm-14.187-14.186c7.835 0 14.187 6.351 14.187 14.186h2c0-8.939-7.247-16.186-16.187-16.186v2zm-14.186 14.186c0-7.835 6.351-14.186 14.186-14.186v-2c-8.939 0-16.186 7.247-16.186 16.186h2zm14.186 14.187c-7.835 0-14.186-6.352-14.186-14.187h-2c0 8.94 7.247 16.187 16.186 16.187v-2z" fill="#fff" mask="url(#a)"/></svg>
+                    <i class="icon_eye" aria-hidden="true">
+                        <svg aria-hidden="true" width="100" height="100" viewBox="0 0 280 224" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#fff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" d="M33.799 83.165L11.944 57.119M82.746 52.219l-11.628-31.95M140 42V8M246.2 83.165l21.855-26.046M197.254 52.219l11.628-31.95M139.914 88C75.64 88 37.857 128.497 27 148.746 27 155.254 73.686 216 139.914 216c61.669 0 102.419-44.836 115.086-67.254C243.419 128.497 204.189 88 139.914 88z"/><mask id="a" fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z"/></mask><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z" fill="#fff"/><path d="M182.203 152c0 22.812-18.492 41.305-41.305 41.305v2c23.917 0 43.305-19.388 43.305-43.305h-2zm-41.305-41.305c22.813 0 41.305 18.493 41.305 41.305h2c0-23.917-19.388-43.305-43.305-43.305v2zM99.593 152c0-22.812 18.493-41.305 41.305-41.305v-2c-23.916 0-43.305 19.388-43.305 43.305h2zm41.305 41.305c-22.812 0-41.305-18.493-41.305-41.305h-2c0 23.917 19.389 43.305 43.305 43.305v-2zm2.255-51.068c0 7.835-6.352 14.187-14.187 14.187v2c8.94 0 16.187-7.247 16.187-16.187h-2zm-14.187-14.186c7.835 0 14.187 6.351 14.187 14.186h2c0-8.939-7.247-16.186-16.187-16.186v2zm-14.186 14.186c0-7.835 6.351-14.186 14.186-14.186v-2c-8.939 0-16.186 7.247-16.186 16.186h2zm14.186 14.187c-7.835 0-14.186-6.352-14.186-14.187h-2c0 8.94 7.247 16.187 16.186 16.187v-2z" fill="#fff" mask="url(#a)"/></svg>
                     </i>
                 </a>   
             </div>
-
+        
             <p class="date_line">13 May 2020</p>
             <a href="free_tools.html" class="headline_link">
-                <h3 class="featured_article_headline">Free Tools for Web Designers</h3>
+                <h2 class="featured_article_headline">Free Tools for Web Designers</h2>
             </a>
-            <a href="free_tools.html" class="read_now_link">Read now
+            <a href="free_tools.html" tabindex="-1" class="read_now_link">Read now
                 <span class="arrow">
-                    <i class="icon_arrow">
-                        <svg class="svg_arrow" xmlns="http://www.w3.org/2000/svg" width="0.9rem" height="0.9rem" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/></svg>
+                    <i class="icon_arrow" aria-hidden="true">
+                        <svg aria-hidden="true" class="svg_arrow" xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/></svg>
                     </i>
                 </span>
             </a>
@@ -334,27 +407,28 @@
 <!-- Footer -->
 
 <footer>
+
     <div class="footer_copy">
-        A Quarantine Project by <br> <a href="https://philipmueller.co.uk/" target="_blank" class="footer_link">PHILIP MUELLER</a>
+        A Quarantine Project by <br> 
+        <a href="https://philipmueller.co.uk/" target="_blank" rel="noopener noreferrer" class="footer_link">PHILIP MUELLER</a>
     </div>
 
     <div class="footer_follow">
-        <button class="follow-button_linkedin">
-            <a href="https://www.linkedin.com/in/philipm83/" target="_blank" class="linkedin-follow">
-                <i class="linkedin-follow">
-                    <svg class="svg_linkedin-follow" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
-                </i>
-            </a>
-        </button>
-    
-        <button class="follow-button_twitter">
-            <a href="https://twitter.com/PhilipMuellerUX" target="_blank" class="twitter-follow">
-                <i class="twitter-follow">
-                    <svg class="svg_twitter-follow" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
-                </i>
-            </a>
-        </button>
+
+        <a aria-label="Visit my LinkedIn profile" class="follow-button_linkedin" href="https://www.linkedin.com/in/philipm83/" target="_blank" rel="noopener noreferrer">
+            <svg class="svg_linkedin-follow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+                <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+            </svg>
+        </a>
+       
+        <a aria-label="Visit my Twitter profile" class="follow-button_twitter" href="https://twitter.com/PhilipMuellerUX" target="_blank" rel="noopener noreferrer">
+            <svg class="svg_twitter-follow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+            </svg>
+        </a>
+        
     </div>
+
 </footer>
 
 <script src="main.js"></script>
