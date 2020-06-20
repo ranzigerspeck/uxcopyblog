@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- General -->
+    <title>UX COPY BLOG | Accessibility Basics: Semantic HTML</title>
+    <meta name="description" content="What is semantic HTML and why should I use it? Discover the backbone of any accessible website."/>
+    <meta charset = "UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="robots" content="index,follow"/>
+    <link rel="canonical" href="https://www.uxcopyblog.com/accessibility_semantic.html"/>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="normalize.css"/>
+    <link rel="stylesheet" href="style.css" />
+    
+    <!-- Open Graph tags -->
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Accessibility Basics: Semantic HTML"/>
+    <meta property="og:description" content="What is semantic HTML and why should I use it? Discover the backbone of any accessible website."/>
+    <meta property="og:image" content="https://www.uxcopyblog.com/_assets/accessibility_semantic/semantic_og_image.jpg"/>
+    <meta property="og:url" content="https://www.uxcopyblog.com/accessibility_semantic.html"/>
+    <meta property="og:locale" content="en_GB"/>
+
+    <!-- Twitter Cards -->
+    <meta property="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Accessibility Basics: Semantic HTML" />
+    <meta name="twitter:description" content="What is semantic HTML and why should I use it? Discover the backbone of any accessible website."/>
+    <meta name="twitter:image" content="https://www.uxcopyblog.com/_assets/accessibility_semantic/semantic_twitter_image.jpg"/>
+    <meta name="twitter:site" content="@PhilipMuellerUX" />
+    <meta name="twitter:creator" content="@PhilipMuellerUX" />
+
+     <!-- Favicon -->
+    <link rel="icon" type="image/png" href="_assets/favicons/favicon_16.png" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="_assets/favicons/favicon_32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="_assets/favicons/favicon_96.png" sizes="96x96"/>   
+    
+    <!-- Analytics-->
+    <script async defer data-domain="uxcopyblog.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="header_copy">
+            <a class="logo" aria-label="Home" href="index.html">
+                <div class="logo_box" aria-hidden="true">
+                    <div class="logo_left" aria-hidden="true">UX</div> 
+                </div>
+                <div class="logo_right" aria-hidden="true">COPY BLOG</div>
+            </a>
+
+            <div id="headline" class="header_headline hide">
+                Accessibility Basics: Semantic HTML
+            </div> 
+        </div>  
+        <div aria-hidden="true" class="progress"></div>
+    </header>   
+    
+<!-- Article | Heading -->
+
+<article>
+    <div class="article_content">
+
+        <h1>
+            Accessibility Basics: Semantic HTML
+        </h1>
+
+        <p class="introduction">
+            Semantic HTML is the backbone of any accessible website. 
+            Semantic elements clearly describe their meaning and content to browsers, developers and users of assistive technologies. 
+            If you want your website to be accessible, start here.
+        </p>
+
+        <!-- Sharing & time -->
+
+        <aside class="time-share">
+
+            <div class="time-share-left">
+                <div class="pushlish-date">19 June 2020</div>
+                <div class="dot">&nbsp;·&nbsp;</div>
+                <div class="read-time"></div>
+            </div>     
+
+            <div class="time-share-right">
+
+                <div class="sharing_button_wrapper">
+
+                    <a aria-label="Share this article on Twitter" class="sharing_button" href="https://twitter.com/share?text=What is semantic HTML and why should I use it? Discover the backbone of any accessible website 👉&url=https://www.uxcopyblog.com/accessibility_semantic.html&hashtags=UXwriting,UX,Accessibility,a11y" target="_blank" rel="noopener noreferrer" class="twitter-share">
+                        <svg class="svg_twitter" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+                            <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                        </svg>
+                    </a>
+
+                    <a aria-label="Share this article by email" class="sharing_button" href="mailto: ?subject=UX COPY BLOG | Accessibility Basics: Semantic HTML&body=https://www.uxcopyblog.com/accessibility_semantic.html" target="_blank" rel="noopener noreferrer" class="email-share">
+                        <svg class="svg_mail" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+                            <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
+                        </svg>
+                    </a>
+
+                    <input type="text" value="https://www.uxcopyblog.com/accessibility_semantic.html" id="myInput" readonly aria-hidden="true" tabindex="-1">
+                    
+                    <button onclick="copyText()" aria-label="Copy link to this article" class="sharing_button_link">
+                        <svg class="svg_link" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+                            <path d="M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-1.311 1.311-3.44 1.3-4.74 0-.303-.303-.564-.68-.727-1.051l-2.246 2.245c.236.358.481.667.796.982.812.812 1.846 1.417 3.036 1.704 1.542.371 3.194.166 4.613-.617.518-.286 1.005-.648 1.444-1.087l4.304-4.305c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z"/>
+                        </svg>
+                    </button>
+
+                    <div id="snackbar">Link copied!</div>
+
+                </div>
+            </div>
+
+        </aside>
+
+    </div>
+
+    <!-- Article | Content -->
+
+    <img src="_assets/accessibility_semantic/semantic_header.svg" class="header_image" alt="A basic website layout using semantic markup">
+
+    <div class="article_content">
+
+        <p class="grey_box">
+            Quick disclaimer: this is just a basic introduction to the semantic HTML. 
+            I’ve added a short reading list at the end of this article if you want to dive deeper into the topic.
+        </p>
+
+        <h2>
+            What is semantic HTML?
+        </h2>
+
+        <p>
+            Let’s start by defining what “semantic HTML” actually means. In short, a semantic element describes its meaning to the browser and the developer. 
+            Some example semantic elements are <code class="inline_code">&lt;button&gt;</code>, <code class="inline_code">&lt;header&gt;</code>, <code class="inline_code">&lt;footer&gt;</code> or <code class="inline_code">&lt;nav&gt;</code>. 
+            <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank" rel="noopener noreferrer">Here’s a comprehensive list of semantic elements (opens in new window)</a>
+        </p>
+
+        <p>
+            Most importantly for accessibility, semantic elements also describe their meaning to users of assistive technologies. 
+            Semantic HTML allows users who rely on, for example, keyboard navigation or screen readers to understand the structure, hierarchy and content of a website. 
+            Semantic elements also come with “built-in” accessibility functionalities, which we’ll discuss in this article.
+
+        </p>
+
+        <h3>
+            Semantic vs. generic elements
+        </h3>
+      
+        <p>
+            It’s important to note the difference between semantic elements and “generic” elements like <code class="inline_code">&lt;div&gt;</code> or <code class="inline_code">&lt;span&gt;</code>. 
+            Those come without any meaning, pre-set styling or built-in functionality. 
+            They are essentially “blank canvases”, which is one reason why they’re so widely used. 
+        </p>
+
+        <p>
+            Keep in mind, however, that generic elements like <code class="inline_code">&lt;div&gt;</code> or <code class="inline_code">&lt;span&gt;</code> are usually “invisible” to assistive technologies. 
+            If you want your project to be accessible, use semantic elements wherever possible. 
+            While generic elements have their purpose, don’t use them for building your website’s layout or its user interface (UI) elements.
+        </p>
+
+        <div class="article_picture_wrapper">
+            <img alt="A basic, semantic HTML layout" class="article_image" src="_assets/accessibility_semantic/semantic_low.png" data-src="_assets/accessibility_semantic/semantic_1.svg">
+            <span class="image_description">A basic, semantic HTML layout</span>
+        </div>
+
+        <h3>
+            Built-in accessibility features
+        </h3>
+
+        <p>
+            Semantic elements come with built-in accessibility features. 
+            For example, you can jump from one interactive element – for example a link, input field or button – to the next just by using the tab key on your keyboard. 
+            Hitting the spacebar or enter key then activates that element. 
+            This is important to users who don’t use a touch or pointing device like a mouse or a trackpad to navigate. 
+        </p>
+
+        <p>
+            In addition, semantic elements announce themselves to screen readers. 
+            For example: “My great headline” inside an <code class="inline_code">&lt;h1&gt;</code> tag is automatically announced as “My great headline, headline level one”, and “Download now” inside a <code class="inline_code">&lt;button&gt;</code> tag is announced as “Download now, button”. 
+        </p>
+
+        <p>
+            This is very important to screen reader users who aren’t able to see your website. 
+            Indicating whether something is a headline, a button or an input field makes it easier to understand a website and interact with its elements.
+        </p>
+
+        <p>
+            On the flip side, if you’re using <code class="inline_code">&lt;div&gt;</code> or <code class="inline_code">&lt;span&gt;</code> elements to create headlines, buttons, input fields and other important parts of your website, you will not get these built-in accessibility features. 
+        </p>
+
+        <div class="article_picture_wrapper">
+            <img alt="An HTML layout that relies heavily on generic elements" class="article_image" src="_assets/accessibility_semantic/semantic_low.png" data-src="_assets/accessibility_semantic/semantic_2.svg">
+            <span class="image_description">Try to avoid using generic elements</span>
+        </div>
+
+        <h2>
+            Page hierarchy: landmarks
+        </h2>
+
+        <p>
+            Some semantic elements serve as so-called “landmarks”: they allow users of assistive technologies to understand the top-level structure and hierarchy of a website. 
+        </p>
+
+        <p>
+            For example, elements like <code class="inline_code">&lt;header&gt;</code>, <code class="inline_code">&lt;footer&gt;</code>, <code class="inline_code">&lt;nav&gt;</code> or <code class="inline_code">&lt;main&gt;</code> tell screen reader users which part of a website they’re currently focusing on. 
+            Here’s an example of what a simple, accessible website structure looks like:
+        </p>
+
+        <div class="article_picture_wrapper">
+            <img alt="Example of a simple, accessible website structure" class="article_image" src="_assets/accessibility_semantic/semantic_low.png" data-src="_assets/accessibility_semantic/semantic_3.svg">
+        </div>
+
+        <p>
+            Landmarks are a great starting point for your HTML markup. 
+            You can use them to create a simple, accessible top-level structure of your layout. 
+            <a href="https://www.w3.org/TR/2019/NOTE-wai-aria-practices-1.1-20190814/examples/landmarks/index.html" target="_blank" rel="noopener noreferrer">Here’s an in-depth look at landmarks (opens in new window)</a> 
+        </p>
+
+        <h2>
+            Content structure
+        </h2>
+
+        <h3>
+            Text and layout
+        </h3>
+
+        <p>
+            When laying out text, use the <code class="inline_code">&lt;p&gt;</code> tag for your body copy and the heading tags from <code class="inline_code">&lt;h1&gt;</code> to <code class="inline_code">&lt;h6&gt;</code> for your headings. 
+            Using these tags makes it easier for screen reader users to navigate your site, because screen readers make it possible to jump from one heading to the next. 
+            This technique is sometimes used to get a quick overview of a website’s content without having to read all the body copy that comes between the headings.
+        </p>
+
+        <p>
+            Using the right heading tag gives screen reader users an idea of how important a piece of content is on your page. 
+            So try not skip from, say, an <code class="inline_code">&lt;h1&gt;</code> for your main headline to an <code class="inline_code">&lt;h3&gt;</code> for all other subheadings.
+        </p>
+
+        <p>
+            Another thing about heading tags is that they come with a pre-set styling (by default, for example, the <code class="inline_code">&lt;h1&gt;</code> font size will always be the largest). 
+            However, when choosing heading tags, ignore these styles and pick headings just by functionality. You can easily override any default style in your CSS. 
+            Just decide which heading tag best represents the importance of your content.
+        </p>
+
+        <p>
+            Also, try to avoid line breaks <code class="inline_code">&lt;br&gt;</code> inside your headings, lists or paragraphs. 
+            They confuse screen readers and break up the content inside an element. 
+        </p>
+
+        <p>
+            When it comes to font sizes, go for relative sizing units like <code class="inline_code">em</code> or <code class="inline_code">rem</code> instead of set pixel values. 
+            That’s because users who don’t see very well can increase the font size in their browser settings. 
+            If you use relative sizing units, your copy scales up or down with those changes. 
+            Set pixel values, on the other hand, stop users from changing your website’s font size. 
+        </p>
+
+        <h3>
+            Images
+        </h3>
+
+        <p>
+            Make your images accessible by adding an <code class="inline_code">alt</code> description of what’s shown in an image. 
+            These will be read out when a screen reader’s focus lands on an image. 
+            Interestingly, Apple’s built-in iOS screen reader “VoiceOver” describes an image even if there’s no <code class="inline_code">alt</code> description, but it’s not quite perfect yet: one of the images on this website shows a rolled-up £5 note, which VoiceOver described as a “drink”. 
+            So always add an <code class="inline_code">alt</code> description to your images.
+        </p>
+
+        <h3>
+            Icons
+        </h3>
+
+        <p>
+            Most websites use some kind of iconography. 
+            Sometimes those icons are just illustrative, and don’t serve any deeper purpose. 
+            Often, however, they’re used for key interactions: for example, icon buttons, progress bars or navigation arrows. 
+        </p>
+
+        <p>
+            As a UX writer, you should identify these purely visual elements and decide whether they need a description for screen reader users. 
+            You can add those descriptions in the form of so-called ARIA labels.
+        </p>
+
+        <div class="small_box">
+            <h3>ARIA</h3>
+            <p class="small_box_copy">
+                Web Accessibility Initiative – Accessible Rich Internet Applications (WAI-ARIA) is a technical specification that aims to make web content and web applications more accessible to people with disabilities. 
+                While semantic HTML offers tags with built-in accessibility features, ARIA offers additional tags which you can use when elements are not accessible by default. 
+                <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA" target="_blank" rel="noopener noreferrer">Read more about ARIA (opens in new window)</a>               
+            </p>
+        </div>
+
+        <h2>
+            User interface elements
+        </h2>
+
+        <p>
+            While there are a number of different user interface (UI) HTML elements, I’ll just focus on the two most common ones, links and buttons. 
+            <a href="https://www.usability.gov/how-to-and-tools/methods/user-interface-elements.html" target="_blank" rel="noopener noreferrer">Here's a comprehensive list of UI elements here (opens in new window)</a>  
+        </p>
+
+        <h3>
+            Buttons
+        </h3>
+
+        <p>
+            When designing accessible buttons, figure out whether something is actually a button or a link. 
+            When it comes to accessibility, it’s important to choose the right tag based on its meaning and functionality, not on its visual appearance. 
+            For example, a link might be designed to look like a button, but as far as functionality goes, it might really just be a link. 
+        </p>
+        
+        <p class="copy_with_list">
+            Once you’ve decided that you’re in fact designing a button, use the <code class="inline_code">&lt;button&gt;</code> tag, not a <code class="inline_code">&lt;div&gt;</code> or any other generic tag. 
+            That’s because <code class="inline_code">&lt;button&gt;</code> comes with these built-in accessibility features:
+        </p>
+
+        <ul>
+            <li>
+                It can be selected just by using the “tab” key
+            </li> 
+       
+            <li>
+                A <code class="inline_code">&lt;button&gt;</code> can be activated by pressing the enter key or spacebar
+            </li>
+        
+            <li>
+                Screen readers automatically add “button” to any text you put inside <code class="inline_code">&lt;button&gt;</code>
+            </li>
+        </ul>
+
+        <p>
+            If your button is a <code class="inline_code">&lt;div&gt;</code>, it won’t be recognised by the tab key – it’s effectively removed from the UI for users who rely on keyboard navigation (or screen readers). 
+            Sure, you can create a <code class="inline_code">&lt;div&gt;</code>, add <code class="inline_code">role="button"</code>, a <code class="inline_code">tabindex</code> and so on – but why go through all this trouble when these functionalities come “for free” with the right, semantic, element?
+        </p>
+
+        <p>
+            Keep in mind that buttons – like other semantic elements – come with a pre-defined styling. 
+            While a <code class="inline_code">&lt;div&gt;</code> comes without any styling, it’s important to replace, or “counter”, the native <code class="inline_code">&lt;button&gt;</code> styles in your CSS. 
+        </p>
+
+        <h3>
+            Links
+        </h3>
+
+        <p>
+            In order to make your links accessible, simply use a descriptive link text in your <code class="inline_code">&lt;a&gt;</code> tag. 
+            Also, think of your links as independent, self-explanatory elements. 
+            That’s because screen reader users can skip from link to link, and they’ll only hear the link text. 
+            So if your website has a bunch of “Click here” or “Learn more” links, it’s easy for screen reader users to get lost.
+        </p>
+
+        <p>
+            If your link opens in a new tab or window, you can add something like “opens in new window” to your link text.
+            That way, you don't confuse screen reader users when they're suddenly taken to a new page.
+        </p>
+
+        <div class="article_picture_wrapper">
+            <img alt="Examples of good and bad link text" class="article_image" src="_assets/accessibility_semantic/semantic_low.png" data-src="_assets/accessibility_semantic/semantic_5.svg">
+        </div>
+
+        <p>
+            As a side note, different browsers display semantic UI elements and the states they come with – e.g. hover, active or focus – differently. 
+            That means that if you click a link on Chrome, not much happens, but on Firefox, a dotted line around the link appears. 
+        </p>
+
+        <p>
+            This can be annoying from a design perspective, but whatever you do to address something like this, don’t set <code class="inline_code">focus</code> to <code class="inline_code">none</code> or <code class="inline_code">0</code>. 
+            While this is a surefire way to remove a dotted line, it’s also a surefire way to make your site a lot less accessible: the <code class="inline_code">focus</code> style usually appears when a user “tabs” through a page. 
+            By removing the <code class="inline_code">focus</code> style, it becomes really hard to know which link or button is currently selected.
+        </p>
+
+        <h2>
+            Reading list
+        </h2>
+
+        <p class="copy_with_list">
+            Want to learn more about web accessibility, standards, projects and best practices? Here’s a quick reading list to help you get started:
+        </p>
+
+        <ul>
+            <li class="list-link"> 
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility" target="_blank" rel="noopener noreferrer">Mozilla’s introduction to accessibility</a>
+            </li>
+
+            <li class="list-link">
+                <a href="https://www.w3.org/WAI/" target="_blank" rel="noopener noreferrer">The W3C’s Web Accessibility Initiative</a>
+            </li>
+
+            <li class="list-link">
+                <a href="https://a11yproject.com/" target="_blank" rel="noopener noreferrer">The A11Y Project</a>
+            </li>
+
+            <li class="list-link">
+                <a href="https://web.dev/accessible/" target="_blank" rel="noopener noreferrer">Google Developers’ quick and helpful accessibility articles</a>
+            </li>
+
+            <li class="list-link">
+                <a href="https://www.sarasoueidan.com/blog/what-accessibility-taught-me/" target="_blank" rel="noopener noreferrer">UI engineer Sara Soueidan discusses her experiences with accessibility</a>
+            </li>
+
+            <li class="list-link">
+                <a href="https://html.com/semantic-markup/" target="_blank" rel="noopener noreferrer">A comprehensive article on semantic markup</a>
+            </li>
+        </ul>
+
+    </div>
+
+</article>
+
+<!-- Bottom share bar -->
+
+<aside class="sharing_bottom_wrapper">
+
+    <div class="sharing_bottom">
+
+        <div class="sharing_bottom_left">
+            <div class="sharing_bottom_intro">Share this article:</div>
+        </div>     
+    
+        <div class="sharing_bottom_right">
+    
+            <div class="sharing_button_wrapper">
+                          
+                <a aria-label="Share this article on Twitter" class="sharing_button" href="https://twitter.com/share?text=What is semantic HTML and why should I use it? Discover the backbone of any accessible website 👉&url=https://www.uxcopyblog.com/accessibility_semantic.html&hashtags=UXwriting,UX,Accessibility,a11y" target="_blank" rel="noopener noreferrer" class="twitter-share">
+                    <svg class="svg_twitter" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                    </svg>
+                </a>
+               
+                <a aria-label="Share this article by email" class="sharing_button" href="mailto: ?subject=UX COPY BLOG | Accessibility Basics: Semantic HTML&body=https://www.uxcopyblog.com/accessibility_semantic.html" target="_blank" rel="noopener noreferrer" class="email-share">
+                    <svg class="svg_mail" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+                        <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
+                    </svg>
+                </a>
+    
+                <input type="text" value="https://www.uxcopyblog.com/accessibility_semantic.html" id="myInput_bottom" readonly aria-hidden="true" tabindex="-1">
+                
+                <button onclick="copyTextBottom()" aria-label="Copy link to this article" class="sharing_button_link">
+                    <svg class="svg_link" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+                        <path d="M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-1.311 1.311-3.44 1.3-4.74 0-.303-.303-.564-.68-.727-1.051l-2.246 2.245c.236.358.481.667.796.982.812.812 1.846 1.417 3.036 1.704 1.542.371 3.194.166 4.613-.617.518-.286 1.005-.648 1.444-1.087l4.304-4.305c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z"/>
+                    </svg>
+                </button>
+    
+                <div id="snackbar_bottom">Link copied!</div>
+    
+            </div>
+
+        </div>
+
+    </div>
+
+</aside>
+
+<!-- Related content -->
+
+<div class="related_content">
+    <div class="related_article_wrapper">
+
+        <div class="latest_article">
+            <div class="preview_image_latest_wrapper">
+                <img class="preview_image_small" src="_assets/essentials_headlines/headlines_header.svg" alt="Headlines in different situations">
+                <a href="essentials_headlines.html" aria-label="Visit article UX Writing Essentials: Headlines" tabindex="-1" class="image_link">
+                    <div class="preview_image_latest_overlay"></div>
+                    <i class="icon_eye" aria-hidden="true">
+                        <svg aria-hidden="true" width="100" height="100" viewBox="0 0 280 224" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#fff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" d="M33.799 83.165L11.944 57.119M82.746 52.219l-11.628-31.95M140 42V8M246.2 83.165l21.855-26.046M197.254 52.219l11.628-31.95M139.914 88C75.64 88 37.857 128.497 27 148.746 27 155.254 73.686 216 139.914 216c61.669 0 102.419-44.836 115.086-67.254C243.419 128.497 204.189 88 139.914 88z"/><mask id="a" fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z"/></mask><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z" fill="#fff"/><path d="M182.203 152c0 22.812-18.492 41.305-41.305 41.305v2c23.917 0 43.305-19.388 43.305-43.305h-2zm-41.305-41.305c22.813 0 41.305 18.493 41.305 41.305h2c0-23.917-19.388-43.305-43.305-43.305v2zM99.593 152c0-22.812 18.493-41.305 41.305-41.305v-2c-23.916 0-43.305 19.388-43.305 43.305h2zm41.305 41.305c-22.812 0-41.305-18.493-41.305-41.305h-2c0 23.917 19.389 43.305 43.305 43.305v-2zm2.255-51.068c0 7.835-6.352 14.187-14.187 14.187v2c8.94 0 16.187-7.247 16.187-16.187h-2zm-14.187-14.186c7.835 0 14.187 6.351 14.187 14.186h2c0-8.939-7.247-16.186-16.187-16.186v2zm-14.186 14.186c0-7.835 6.351-14.186 14.186-14.186v-2c-8.939 0-16.186 7.247-16.186 16.186h2zm14.186 14.187c-7.835 0-14.186-6.352-14.186-14.187h-2c0 8.94 7.247 16.187 16.186 16.187v-2z" fill="#fff" mask="url(#a)"/></svg>
+                    </i>
+                </a>   
+            </div>
+            
+            <p class="date_line">18 May 2020</p>
+            <a href="essentials_headlines.html" class="headline_link">
+                <h2 class="featured_article_headline">UX Writing Essentials: Headlines</h2>
+            </a>
+            <a href="essentials_headlines.html" tabindex="-1" class="read_now_link">Read now
+                <span class="icon_arrow" aria-hidden="true">
+                        <svg class="svg_arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/></svg>
+                </span>
+           </a>
+        </div>
+
+        <div class="latest_article">
+            <div class="preview_image_latest_wrapper">
+                <img class="preview_image_small" src="_assets/essentials_errors/errors_header.svg" alt="A couple of error messages">
+                <a href="essentials_error_messages.html" aria-label="Visit article UX Writing Essentials: Error Messages" tabindex="-1" class="image_link">
+                    <div class="preview_image_latest_overlay"></div>
+                    <i class="icon_eye" aria-hidden="true">
+                        <svg aria-hidden="true" width="100" height="100" viewBox="0 0 280 224" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#fff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" d="M33.799 83.165L11.944 57.119M82.746 52.219l-11.628-31.95M140 42V8M246.2 83.165l21.855-26.046M197.254 52.219l11.628-31.95M139.914 88C75.64 88 37.857 128.497 27 148.746 27 155.254 73.686 216 139.914 216c61.669 0 102.419-44.836 115.086-67.254C243.419 128.497 204.189 88 139.914 88z"/><mask id="a" fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z"/></mask><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z" fill="#fff"/><path d="M182.203 152c0 22.812-18.492 41.305-41.305 41.305v2c23.917 0 43.305-19.388 43.305-43.305h-2zm-41.305-41.305c22.813 0 41.305 18.493 41.305 41.305h2c0-23.917-19.388-43.305-43.305-43.305v2zM99.593 152c0-22.812 18.493-41.305 41.305-41.305v-2c-23.916 0-43.305 19.388-43.305 43.305h2zm41.305 41.305c-22.812 0-41.305-18.493-41.305-41.305h-2c0 23.917 19.389 43.305 43.305 43.305v-2zm2.255-51.068c0 7.835-6.352 14.187-14.187 14.187v2c8.94 0 16.187-7.247 16.187-16.187h-2zm-14.187-14.186c7.835 0 14.187 6.351 14.187 14.186h2c0-8.939-7.247-16.186-16.187-16.186v2zm-14.186 14.186c0-7.835 6.351-14.186 14.186-14.186v-2c-8.939 0-16.186 7.247-16.186 16.186h2zm14.186 14.187c-7.835 0-14.186-6.352-14.186-14.187h-2c0 8.94 7.247 16.187 16.186 16.187v-2z" fill="#fff" mask="url(#a)"/></svg>
+                    </i>
+                </a>   
+            </div>
+        
+            <p class="date_line">15 May 2020</p>
+            <a href="essentials_error_messages.html" class="headline_link">
+                <h2 class="featured_article_headline">UX Writing Essentials: Error Messages</h2>
+            </a>
+            <a href="essentials_error_messages.html" tabindex="-1" class="read_now_link">Read now
+                <span class="icon_arrow" aria-hidden="true">
+                        <svg aria-hidden="true" class="svg_arrow" xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/></svg>
+                </span>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<!-- Footer -->
+
+<footer>
+
+    <div class="footer_copy">
+        A Quarantine Project by <br> 
+        <a href="https://philipmueller.co.uk/" target="_blank" rel="noopener noreferrer" class="footer_link">PHILIP MUELLER</a>
+    </div>
+
+    <div class="footer_follow">
+
+        <a aria-label="Visit my LinkedIn profile" class="follow-button_linkedin" href="https://www.linkedin.com/in/philipm83/" target="_blank" rel="noopener noreferrer">
+            <svg class="svg_linkedin-follow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+                <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+            </svg>
+        </a>
+       
+        <a aria-label="Visit my Twitter profile" class="follow-button_twitter" href="https://twitter.com/PhilipMuellerUX" target="_blank" rel="noopener noreferrer">
+            <svg class="svg_twitter-follow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+            </svg>
+        </a>
+        
+    </div>
+
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
