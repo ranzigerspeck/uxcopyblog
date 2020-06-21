@@ -78,8 +78,8 @@
         <aside class="time-share">
 
             <div class="time-share-left">
-                <div class="pushlish-date">19 June 2020</div>
-                <div class="dot">&nbsp;·&nbsp;</div>
+                <div class="pushlish-date">21 June 2020</div>
+                <div aria-hidden="true" class="dot">·</div>
                 <div class="read-time"></div>
             </div>     
 
@@ -123,7 +123,7 @@
     <div class="article_content">
 
         <p class="grey_box">
-            Quick disclaimer: this is just a basic introduction to the semantic HTML. 
+            Quick disclaimer: this is just a basic introduction to semantic HTML. 
             I’ve added a short reading list at the end of this article if you want to dive deeper into the topic.
         </p>
 
@@ -170,10 +170,10 @@
         </h3>
 
         <p>
-            Semantic elements come with built-in accessibility features. 
+            Semantic elements come with certain accessibility features. 
             For example, you can jump from one interactive element – for example a link, input field or button – to the next just by using the tab key on your keyboard. 
             Hitting the spacebar or enter key then activates that element. 
-            This is important to users who don’t use a touch or pointing device like a mouse or a trackpad to navigate. 
+            This is important to users who don’t use a touch or pointing device like a mouse or a trackpad. 
         </p>
 
         <p>
@@ -182,12 +182,12 @@
         </p>
 
         <p>
-            This is very important to screen reader users who aren’t able to see your website. 
+            This is important to screen reader users who aren’t able to see your website. 
             Indicating whether something is a headline, a button or an input field makes it easier to understand a website and interact with its elements.
         </p>
 
         <p>
-            On the flip side, if you’re using <code class="inline_code">&lt;div&gt;</code> or <code class="inline_code">&lt;span&gt;</code> elements to create headlines, buttons, input fields and other important parts of your website, you will not get these built-in accessibility features. 
+            On the flip side, if you’re using <code class="inline_code">&lt;div&gt;</code> or <code class="inline_code">&lt;span&gt;</code> elements to create headlines, buttons, input fields and other important parts of your website, you will not get these accessibility features. 
         </p>
 
         <div class="article_picture_wrapper">
@@ -200,7 +200,7 @@
         </h2>
 
         <p>
-            Some semantic elements serve as so-called “landmarks”: they allow users of assistive technologies to understand the top-level structure and hierarchy of a website. 
+            Some semantic elements serve as so-called “landmarks”: they allow users of assistive technologies to understand the overall structure and hierarchy of a website. 
         </p>
 
         <p>
@@ -213,9 +213,8 @@
         </div>
 
         <p>
-            Landmarks are a great starting point for your HTML markup. 
-            You can use them to create a simple, accessible top-level structure of your layout. 
-            <a href="https://www.w3.org/TR/2019/NOTE-wai-aria-practices-1.1-20190814/examples/landmarks/index.html" target="_blank" rel="noopener noreferrer">Here’s an in-depth look at landmarks (opens in new window)</a> 
+            Landmarks are a great starting point for your HTML markup. If you want to learn more,  
+            <a href="https://www.w3.org/TR/2019/NOTE-wai-aria-practices-1.1-20190814/examples/landmarks/index.html" target="_blank" rel="noopener noreferrer">here’s an in-depth look at landmarks (opens in new window)</a> 
         </p>
 
         <h2>
@@ -228,8 +227,9 @@
 
         <p>
             When laying out text, use the <code class="inline_code">&lt;p&gt;</code> tag for your body copy and the heading tags from <code class="inline_code">&lt;h1&gt;</code> to <code class="inline_code">&lt;h6&gt;</code> for your headings. 
-            Using these tags makes it easier for screen reader users to navigate your site, because screen readers make it possible to jump from one heading to the next. 
-            This technique is sometimes used to get a quick overview of a website’s content without having to read all the body copy that comes between the headings.
+            Using these tags makes it easier for screen reader users to navigate your site. 
+            That's because screen readers let users jump from one heading to the next. 
+            This technique is sometimes used to get a quick overview of a website’s content, without having to read all the body copy between the headings.
         </p>
 
         <p>
@@ -239,7 +239,7 @@
 
         <p>
             Another thing about heading tags is that they come with a pre-set styling (by default, for example, the <code class="inline_code">&lt;h1&gt;</code> font size will always be the largest). 
-            However, when choosing heading tags, ignore these styles and pick headings just by functionality. You can easily override any default style in your CSS. 
+            However, when choosing heading tags, ignore these styles and pick headings only by functionality. You can easily override any default style in your CSS. 
             Just decide which heading tag best represents the importance of your content.
         </p>
 
@@ -262,7 +262,7 @@
         <p>
             Make your images accessible by adding an <code class="inline_code">alt</code> description of what’s shown in an image. 
             These will be read out when a screen reader’s focus lands on an image. 
-            Interestingly, Apple’s built-in iOS screen reader “VoiceOver” describes an image even if there’s no <code class="inline_code">alt</code> description, but it’s not quite perfect yet: one of the images on this website shows a rolled-up £5 note, which VoiceOver described as a “drink”. 
+            Interestingly, Apple’s iOS screen reader “VoiceOver” describes an image even if there’s no <code class="inline_code">alt</code> description, but it’s not quite perfect yet: one of the images on this website shows a rolled-up £5 note, which VoiceOver described as a “drink”. 
             So always add an <code class="inline_code">alt</code> description to your images.
         </p>
 
@@ -285,7 +285,7 @@
             <h3>ARIA</h3>
             <p class="small_box_copy">
                 Web Accessibility Initiative – Accessible Rich Internet Applications (WAI-ARIA) is a technical specification that aims to make web content and web applications more accessible to people with disabilities. 
-                While semantic HTML offers tags with built-in accessibility features, ARIA offers additional tags which you can use when elements are not accessible by default. 
+                While semantic HTML offers tags that come with accessibility features, ARIA offers additional tags which you can use when elements are not accessible by default. 
                 <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA" target="_blank" rel="noopener noreferrer">Read more about ARIA (opens in new window)</a>               
             </p>
         </div>
@@ -311,16 +311,16 @@
         
         <p class="copy_with_list">
             Once you’ve decided that you’re in fact designing a button, use the <code class="inline_code">&lt;button&gt;</code> tag, not a <code class="inline_code">&lt;div&gt;</code> or any other generic tag. 
-            That’s because <code class="inline_code">&lt;button&gt;</code> comes with these built-in accessibility features:
+            That’s because <code class="inline_code">&lt;button&gt;</code> offers these accessibility features:
         </p>
 
         <ul>
             <li>
-                It can be selected just by using the “tab” key
+                A <code class="inline_code">&lt;button&gt;</code> can be selected just by using the “tab” key
             </li> 
        
             <li>
-                A <code class="inline_code">&lt;button&gt;</code> can be activated by pressing the enter key or spacebar
+               It can then be activated by pressing the enter key or spacebar
             </li>
         
             <li>
@@ -346,7 +346,7 @@
             In order to make your links accessible, simply use a descriptive link text in your <code class="inline_code">&lt;a&gt;</code> tag. 
             Also, think of your links as independent, self-explanatory elements. 
             That’s because screen reader users can skip from link to link, and they’ll only hear the link text. 
-            So if your website has a bunch of “Click here” or “Learn more” links, it’s easy for screen reader users to get lost.
+            So if your website has a bunch of “Click here” or “Learn more” links, it’s easy to get lost.
         </p>
 
         <p>
@@ -355,7 +355,7 @@
         </p>
 
         <div class="article_picture_wrapper">
-            <img alt="Examples of good and bad link text" class="article_image" src="_assets/accessibility_semantic/semantic_low.png" data-src="_assets/accessibility_semantic/semantic_5.svg">
+            <img alt="Examples of good and bad link text" class="article_image" src="_assets/accessibility_semantic/semantic_low.png" data-src="_assets/accessibility_semantic/semantic_4.svg">
         </div>
 
         <p>
@@ -461,9 +461,9 @@
                 <img class="preview_image_small" src="_assets/essentials_headlines/headlines_header.svg" alt="Headlines in different situations">
                 <a href="essentials_headlines.html" aria-label="Visit article UX Writing Essentials: Headlines" tabindex="-1" class="image_link">
                     <div class="preview_image_latest_overlay"></div>
-                    <i class="icon_eye" aria-hidden="true">
+                    <div class="icon_eye" aria-hidden="true">
                         <svg aria-hidden="true" width="100" height="100" viewBox="0 0 280 224" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#fff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" d="M33.799 83.165L11.944 57.119M82.746 52.219l-11.628-31.95M140 42V8M246.2 83.165l21.855-26.046M197.254 52.219l11.628-31.95M139.914 88C75.64 88 37.857 128.497 27 148.746 27 155.254 73.686 216 139.914 216c61.669 0 102.419-44.836 115.086-67.254C243.419 128.497 204.189 88 139.914 88z"/><mask id="a" fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z"/></mask><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z" fill="#fff"/><path d="M182.203 152c0 22.812-18.492 41.305-41.305 41.305v2c23.917 0 43.305-19.388 43.305-43.305h-2zm-41.305-41.305c22.813 0 41.305 18.493 41.305 41.305h2c0-23.917-19.388-43.305-43.305-43.305v2zM99.593 152c0-22.812 18.493-41.305 41.305-41.305v-2c-23.916 0-43.305 19.388-43.305 43.305h2zm41.305 41.305c-22.812 0-41.305-18.493-41.305-41.305h-2c0 23.917 19.389 43.305 43.305 43.305v-2zm2.255-51.068c0 7.835-6.352 14.187-14.187 14.187v2c8.94 0 16.187-7.247 16.187-16.187h-2zm-14.187-14.186c7.835 0 14.187 6.351 14.187 14.186h2c0-8.939-7.247-16.186-16.187-16.186v2zm-14.186 14.186c0-7.835 6.351-14.186 14.186-14.186v-2c-8.939 0-16.186 7.247-16.186 16.186h2zm14.186 14.187c-7.835 0-14.186-6.352-14.186-14.187h-2c0 8.94 7.247 16.187 16.186 16.187v-2z" fill="#fff" mask="url(#a)"/></svg>
-                    </i>
+                    </div>
                 </a>   
             </div>
             
@@ -483,9 +483,9 @@
                 <img class="preview_image_small" src="_assets/essentials_errors/errors_header.svg" alt="A couple of error messages">
                 <a href="essentials_error_messages.html" aria-label="Visit article UX Writing Essentials: Error Messages" tabindex="-1" class="image_link">
                     <div class="preview_image_latest_overlay"></div>
-                    <i class="icon_eye" aria-hidden="true">
+                    <div class="icon_eye" aria-hidden="true">
                         <svg aria-hidden="true" width="100" height="100" viewBox="0 0 280 224" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#fff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" d="M33.799 83.165L11.944 57.119M82.746 52.219l-11.628-31.95M140 42V8M246.2 83.165l21.855-26.046M197.254 52.219l11.628-31.95M139.914 88C75.64 88 37.857 128.497 27 148.746 27 155.254 73.686 216 139.914 216c61.669 0 102.419-44.836 115.086-67.254C243.419 128.497 204.189 88 139.914 88z"/><mask id="a" fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z"/></mask><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z" fill="#fff"/><path d="M182.203 152c0 22.812-18.492 41.305-41.305 41.305v2c23.917 0 43.305-19.388 43.305-43.305h-2zm-41.305-41.305c22.813 0 41.305 18.493 41.305 41.305h2c0-23.917-19.388-43.305-43.305-43.305v2zM99.593 152c0-22.812 18.493-41.305 41.305-41.305v-2c-23.916 0-43.305 19.388-43.305 43.305h2zm41.305 41.305c-22.812 0-41.305-18.493-41.305-41.305h-2c0 23.917 19.389 43.305 43.305 43.305v-2zm2.255-51.068c0 7.835-6.352 14.187-14.187 14.187v2c8.94 0 16.187-7.247 16.187-16.187h-2zm-14.187-14.186c7.835 0 14.187 6.351 14.187 14.186h2c0-8.939-7.247-16.186-16.187-16.186v2zm-14.186 14.186c0-7.835 6.351-14.186 14.186-14.186v-2c-8.939 0-16.186 7.247-16.186 16.186h2zm14.186 14.187c-7.835 0-14.186-6.352-14.186-14.187h-2c0 8.94 7.247 16.187 16.186 16.187v-2z" fill="#fff" mask="url(#a)"/></svg>
-                    </i>
+                    </div>
                 </a>   
             </div>
         

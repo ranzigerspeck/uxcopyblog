@@ -78,7 +78,8 @@
         <aside class="time-share">
 
             <div class="time-share-left">
-                <div class="pushlish-date">18 May 2020 ·&nbsp;</div>
+                <div class="pushlish-date">18 May 2020</div>
+                <div aria-hidden="true" class="dot">·</div>
                 <div class="read-time"></div>
             </div>     
 
@@ -100,8 +101,8 @@
 
                     <input type="text" value="https://www.uxcopyblog.com/essentials_ctas.html" id="myInput" readonly aria-hidden="true" tabindex="-1">
                     
-                    <button aria-label="Copy link to this article" class="sharing_button_link">
-                        <svg class="svg_link" aria-hidden="true" onclick="copyText()" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+                    <button onclick="copyText()" aria-label="Copy link to this article" class="sharing_button_link">
+                        <svg class="svg_link" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
                             <path d="M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-1.311 1.311-3.44 1.3-4.74 0-.303-.303-.564-.68-.727-1.051l-2.246 2.245c.236.358.481.667.796.982.812.812 1.846 1.417 3.036 1.704 1.542.371 3.194.166 4.613-.617.518-.286 1.005-.648 1.444-1.087l4.304-4.305c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z"/>
                         </svg>
                     </button>
@@ -192,12 +193,12 @@
 
         <p>
             If you want to know more about how headlines and CTAs work together, 
-            <a href="https://www.uxcopyblog.com/essentials_headlines.html" target="_blank" rel="noopener noreferrer">check out my article on headlines</a>
+            <a href="https://www.uxcopyblog.com/essentials_headlines.html" target="_blank" rel="noopener noreferrer">check out my article on headlines (opens in new window)</a>
         </p>
             
         <div class="small_box">
+            <h3>Accessibility</h3>
             <p class="small_box_copy">
-                <span class="bold_black">Accessibility</span><br>
                 In order for your CTA button to be properly accessible to screen readers, try to use the <code class="inline_code">button</code> HTML tag, not a generic element like a <code class="inline_code">div</code>. 
                 The <code class="inline_code">button</code> tag comes with built-in screen reader functionality, and will announce itself as, for example, “Create new file, button". 
             </p>
@@ -259,10 +260,10 @@
         </p>
 
         <div class="small_box">
+            <h3>Accessibility</h3>
             <p class="small_box_copy">
-                <span class="bold_black">Accessibility</span><br>
                 When you use CTA icons without any words, make sure that your icons are accessible. Use the <code class="inline_code">button</code> tag and add some <code class="inline_code">aria</code> text to your code that tells screen readers what an icon CTA does. 
-                <a href="https://www.sarasoueidan.com/blog/accessible-icon-buttons/" target="_blank" rel="noopener noreferrer" >Learn how to make your buttons more accessible</a>
+                <a href="https://www.sarasoueidan.com/blog/accessible-icon-buttons/" target="_blank" rel="noopener noreferrer">Learn how to make your buttons more accessible (opens in new window)</a>
             </p>
         </div>
         
@@ -298,8 +299,8 @@
     
                 <input type="text" value="https://www.uxcopyblog.com/essentials_ctas.html" id="myInput_bottom" readonly aria-hidden="true" tabindex="-1">
                 
-                <button aria-label="Copy link to this article" class="sharing_button_link">
-                    <svg class="svg_link" aria-hidden="true" onclick="copyTextBottom()" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+                <button onclick="copyTextBottom()" aria-label="Copy link to this article" class="sharing_button_link">
+                    <svg class="svg_link" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
                         <path d="M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-1.311 1.311-3.44 1.3-4.74 0-.303-.303-.564-.68-.727-1.051l-2.246 2.245c.236.358.481.667.796.982.812.812 1.846 1.417 3.036 1.704 1.542.371 3.194.166 4.613-.617.518-.286 1.005-.648 1.444-1.087l4.304-4.305c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z"/>
                     </svg>
                 </button>
@@ -324,9 +325,9 @@
                 <img class="preview_image_small" src="_assets/essentials_headlines/headlines_header.svg" alt="Headlines in different situations">
                 <a href="essentials_headlines.html" aria-label="Visit article UX Writing Essentials: Headlines" tabindex="-1" class="image_link">
                     <div class="preview_image_latest_overlay"></div>
-                    <i class="icon_eye" aria-hidden="true">
+                    <div class="icon_eye" aria-hidden="true">
                         <svg aria-hidden="true" width="100" height="100" viewBox="0 0 280 224" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#fff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" d="M33.799 83.165L11.944 57.119M82.746 52.219l-11.628-31.95M140 42V8M246.2 83.165l21.855-26.046M197.254 52.219l11.628-31.95M139.914 88C75.64 88 37.857 128.497 27 148.746 27 155.254 73.686 216 139.914 216c61.669 0 102.419-44.836 115.086-67.254C243.419 128.497 204.189 88 139.914 88z"/><mask id="a" fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z"/></mask><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z" fill="#fff"/><path d="M182.203 152c0 22.812-18.492 41.305-41.305 41.305v2c23.917 0 43.305-19.388 43.305-43.305h-2zm-41.305-41.305c22.813 0 41.305 18.493 41.305 41.305h2c0-23.917-19.388-43.305-43.305-43.305v2zM99.593 152c0-22.812 18.493-41.305 41.305-41.305v-2c-23.916 0-43.305 19.388-43.305 43.305h2zm41.305 41.305c-22.812 0-41.305-18.493-41.305-41.305h-2c0 23.917 19.389 43.305 43.305 43.305v-2zm2.255-51.068c0 7.835-6.352 14.187-14.187 14.187v2c8.94 0 16.187-7.247 16.187-16.187h-2zm-14.187-14.186c7.835 0 14.187 6.351 14.187 14.186h2c0-8.939-7.247-16.186-16.187-16.186v2zm-14.186 14.186c0-7.835 6.351-14.186 14.186-14.186v-2c-8.939 0-16.186 7.247-16.186 16.186h2zm14.186 14.187c-7.835 0-14.186-6.352-14.186-14.187h-2c0 8.94 7.247 16.187 16.186 16.187v-2z" fill="#fff" mask="url(#a)"/></svg>
-                    </i>
+                    </div>
                 </a>   
             </div>
             
@@ -335,10 +336,8 @@
                 <h2 class="featured_article_headline">UX Writing Essentials: Headlines</h2>
             </a>
             <a href="essentials_headlines.html" tabindex="-1" class="read_now_link">Read now
-                <span class="arrow">
-                    <i class="icon_arrow" aria-hidden="true">
+                <span class="icon_arrow" aria-hidden="true">
                         <svg class="svg_arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/></svg>
-                    </i>
                 </span>
            </a>
         </div>
@@ -348,9 +347,9 @@
                 <img class="preview_image_small" src="_assets/essentials_errors/errors_header.svg" alt="A couple of error messages">
                 <a href="essentials_error_messages.html" aria-label="Visit article UX Writing Essentials: Error Messages" tabindex="-1" class="image_link">
                     <div class="preview_image_latest_overlay"></div>
-                    <i class="icon_eye" aria-hidden="true">
+                    <div class="icon_eye" aria-hidden="true">
                         <svg aria-hidden="true" width="100" height="100" viewBox="0 0 280 224" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#fff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" d="M33.799 83.165L11.944 57.119M82.746 52.219l-11.628-31.95M140 42V8M246.2 83.165l21.855-26.046M197.254 52.219l11.628-31.95M139.914 88C75.64 88 37.857 128.497 27 148.746 27 155.254 73.686 216 139.914 216c61.669 0 102.419-44.836 115.086-67.254C243.419 128.497 204.189 88 139.914 88z"/><mask id="a" fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z"/></mask><path fill-rule="evenodd" clip-rule="evenodd" d="M140.898 194.305c23.365 0 42.305-18.941 42.305-42.305 0-23.365-18.94-42.305-42.305-42.305-23.364 0-42.305 18.94-42.305 42.305 0 23.364 18.941 42.305 42.305 42.305zm-11.932-36.881c8.387 0 15.187-6.8 15.187-15.187s-6.8-15.186-15.187-15.186-15.186 6.799-15.186 15.186 6.799 15.187 15.186 15.187z" fill="#fff"/><path d="M182.203 152c0 22.812-18.492 41.305-41.305 41.305v2c23.917 0 43.305-19.388 43.305-43.305h-2zm-41.305-41.305c22.813 0 41.305 18.493 41.305 41.305h2c0-23.917-19.388-43.305-43.305-43.305v2zM99.593 152c0-22.812 18.493-41.305 41.305-41.305v-2c-23.916 0-43.305 19.388-43.305 43.305h2zm41.305 41.305c-22.812 0-41.305-18.493-41.305-41.305h-2c0 23.917 19.389 43.305 43.305 43.305v-2zm2.255-51.068c0 7.835-6.352 14.187-14.187 14.187v2c8.94 0 16.187-7.247 16.187-16.187h-2zm-14.187-14.186c7.835 0 14.187 6.351 14.187 14.186h2c0-8.939-7.247-16.186-16.187-16.186v2zm-14.186 14.186c0-7.835 6.351-14.186 14.186-14.186v-2c-8.939 0-16.186 7.247-16.186 16.186h2zm14.186 14.187c-7.835 0-14.186-6.352-14.186-14.187h-2c0 8.94 7.247 16.187 16.186 16.187v-2z" fill="#fff" mask="url(#a)"/></svg>
-                    </i>
+                    </div>
                 </a>   
             </div>
         
@@ -359,10 +358,8 @@
                 <h2 class="featured_article_headline">UX Writing Essentials: Error Messages</h2>
             </a>
             <a href="essentials_error_messages.html" tabindex="-1" class="read_now_link">Read now
-                <span class="arrow">
-                    <i class="icon_arrow" aria-hidden="true">
+                <span class="icon_arrow" aria-hidden="true">
                         <svg aria-hidden="true" class="svg_arrow" xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/></svg>
-                    </i>
                 </span>
             </a>
         </div>
